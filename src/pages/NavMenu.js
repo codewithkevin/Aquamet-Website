@@ -5,7 +5,7 @@ const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap lg:px-[90px] px-6 py-2 bottom-1 border">
+    <nav className="flex items-center justify-between flex-wrap lg:px-[130px] px-6 py-2 bottom-1 border">
       <div className="flex flex-row items-center flex-shrink-0 text-white mr-6 lg:mr-72">
         <img src={logo} className="top-2" alt="Logo" />
         <h1 className="text-[#146A96] text-2xl font-extrabold ml-2">Aquamet</h1>
@@ -60,6 +60,12 @@ const NavMenu = () => {
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
           >
             News
+          </a>
+          <a
+            href="#"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
+          >
+            Contact Us
           </a>
         </div>
 
