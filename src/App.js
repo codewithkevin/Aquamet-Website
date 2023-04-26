@@ -1,5 +1,11 @@
+import NavMenu from "./pages/NavMenu";
+
 const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <NavMenu />
+    </div>
+  );
 };
 
 export default App;
