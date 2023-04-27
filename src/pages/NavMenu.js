@@ -39,38 +39,40 @@ const NavMenu = () => {
         <div className="text-sm lg:flex-grow">
           <a
             href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
           >
             About Us
           </a>
           <a
             href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
           >
             Products
           </a>
           <a
             href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
           >
             Our Solution
           </a>
           <a
             href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
           >
             News
           </a>
           <a
             href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
           >
             Contact Us
           </a>
         </div>
 
         <div className="flex flex-row items-center">
-          <div>Log In</div>
+          <div>
+            <h1 className="text-[16px] text-[#475467]  font-medium">Log In</h1>
+          </div>
           <div className="ml-5">
             <button className="inline-flex items-center bg-[#146A96] border-0 py-2 px-4 text-white rounded-lg">
               <h5 className="font-normal">Visit AquaStall</h5>
