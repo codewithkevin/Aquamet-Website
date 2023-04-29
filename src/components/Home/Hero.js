@@ -51,8 +51,8 @@ const Hero = () => {
             <div className="relative top-1/4 left-4 lg:left-28  w-full flex flex-col">
               <div className="w-[450px] space-y-7 mb-10">
                 <h1 className="text-white  max-w-2xl text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
-                  Real time water quality monitoring and management in fish
-                  farms.
+                  Reduce high mortalities and obtain 35% more fish at harvest
+                  with our predictive management tools
                 </h1>
                 <p className="w-[350px] text-white">
                   Empowering Aquaculture Production Through Technology.
@@ -87,8 +87,8 @@ const Hero = () => {
             <div className="relative top-1/4 left-4 lg:left-28  w-full flex flex-col">
               <div className="w-[450px] space-y-7 mb-10">
                 <h1 className="text-white  max-w-2xl text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
-                  Real time water quality monitoring and management in fish
-                  farms.
+                  Revolutionizing Aquaculture with Smart Water Monitoring and
+                  Farm Management Tools.
                 </h1>
                 <p className="w-[350px] text-white">
                   Empowering Aquaculture Production Through Technology.
@@ -123,8 +123,8 @@ const Hero = () => {
             <div className="relative top-1/4 left-4 lg:left-28  w-full flex flex-col">
               <div className="w-[450px] space-y-7 mb-10">
                 <h1 className="text-white  max-w-2xl text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
-                  Real time water quality monitoring and management in fish
-                  farms.
+                  AquaStall: Buy/sell fish farm inputs and high-quality fish
+                  from 500+ farmers.
                 </h1>
                 <p className="w-[350px] text-white">
                   Empowering Aquaculture Production Through Technology.
@@ -159,10 +159,11 @@ const Hero = () => {
             <div className="relative top-1/4 left-4 lg:left-28  w-full flex flex-col">
               <div className="w-[450px] space-y-7 mb-10">
                 <h1 className="text-white  max-w-2xl text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
-                  Real time water quality monitoring and management in fish
-                  farms.
+                  Get expert advice and tools to improve your fish farm
+                  production and harvest.
                 </h1>
-                <p className="w-[350px] text-white">
+
+                <p className="w-[350px] text-[#E6E7E6]">
                   Empowering Aquaculture Production Through Technology.
                 </p>
               </div>
