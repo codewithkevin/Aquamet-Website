@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Carousel, Button } from "antd";
 import { BiPlayCircle } from "react-icons/bi";
 import slide1 from "../../assests/Hero/slide1.png";
@@ -8,7 +7,7 @@ import slide4 from "../../assests/Hero/slide4.png";
 
 const Hero = () => {
   const slideOne = {
-    height: "870px",
+    height: "93vh",
     color: "#fff",
     lineHeight: "160px",
     backgroundImage: `url(${slide1})`,
@@ -17,7 +16,7 @@ const Hero = () => {
   };
 
   const slideTwo = {
-    height: "870px",
+    height: "93vh",
     color: "#fff",
     lineHeight: "160px",
     backgroundImage: `url(${slide2})`,
@@ -26,7 +25,7 @@ const Hero = () => {
   };
 
   const slideThree = {
-    height: "870px",
+    height: "93vh",
     color: "#fff",
     lineHeight: "160px",
     backgroundImage: `url(${slide3})`,
@@ -35,23 +34,13 @@ const Hero = () => {
   };
 
   const slideFour = {
-    height: "870px",
+    height: "93vh",
     color: "#fff",
     lineHeight: "160px",
     backgroundImage: `url(${slide4})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      console.log("Width " + window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <div className="relative h-[100vh] w-full justify-center">
