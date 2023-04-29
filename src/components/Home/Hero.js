@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import { Carousel, Button } from "antd";
 import { BiPlayCircle } from "react-icons/bi";
 import slide1 from "../../assests/Hero/slide1.png";
@@ -43,18 +43,28 @@ const Hero = () => {
     backgroundPosition: "center",
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      console.log("Width " + window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="relative h-[100vh] w-full justify-center">
       <Carousel autoplay>
         <div>
           <div style={slideOne}>
-            <div className="relative top-1/4 left-4 lg:left-28  w-full flex flex-col">
-              <div className="w-[450px] space-y-7 mb-10">
-                <h1 className="text-white  max-w-2xl text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
+            <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
+              <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
                   Reduce high mortalities and obtain 35% more fish at harvest
                   with our predictive management tools
                 </h1>
-                <p className="w-[350px] text-white">
+                <p className="text-white mt-5">
                   Empowering Aquaculture Production Through Technology.
                 </p>
               </div>
@@ -84,13 +94,13 @@ const Hero = () => {
 
         <div>
           <div style={slideTwo}>
-            <div className="relative top-1/4 left-4 lg:left-28  w-full flex flex-col">
-              <div className="w-[450px] space-y-7 mb-10">
-                <h1 className="text-white  max-w-2xl text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
+            <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
+              <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
                   Revolutionizing Aquaculture with Smart Water Monitoring and
                   Farm Management Tools.
                 </h1>
-                <p className="w-[350px] text-white">
+                <p className="text-white mt-5">
                   Empowering Aquaculture Production Through Technology.
                 </p>
               </div>
@@ -120,13 +130,13 @@ const Hero = () => {
 
         <div>
           <div style={slideThree}>
-            <div className="relative top-1/4 left-4 lg:left-28  w-full flex flex-col">
-              <div className="w-[450px] space-y-7 mb-10">
-                <h1 className="text-white  max-w-2xl text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
+            <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
+              <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
                   AquaStall: Buy/sell fish farm inputs and high-quality fish
                   from 500+ farmers.
                 </h1>
-                <p className="w-[350px] text-white">
+                <p className="text-white mt-5">
                   Empowering Aquaculture Production Through Technology.
                 </p>
               </div>
@@ -156,14 +166,13 @@ const Hero = () => {
 
         <div>
           <div style={slideFour}>
-            <div className="relative top-1/4 left-4 lg:left-28  w-full flex flex-col">
-              <div className="w-[450px] space-y-7 mb-10">
-                <h1 className="text-white  max-w-2xl text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
+            <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
+              <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
                   Get expert advice and tools to improve your fish farm
                   production and harvest.
                 </h1>
-
-                <p className="w-[350px] text-[#E6E7E6]">
+                <p className="text-white mt-5">
                   Empowering Aquaculture Production Through Technology.
                 </p>
               </div>
