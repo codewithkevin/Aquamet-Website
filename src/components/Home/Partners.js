@@ -5,12 +5,12 @@ import partner from "../../assests/Partners/partner.png";
 
 const Partners = () => {
   return (
-    <div className="flex flex-col mb-20">
-      <div className="text-center">
+    <div>
+      <div className="flex justify-center">
         <h2 className="font-bold text-2xl my-4">Our trusted partners</h2>
       </div>
-      <div className="flex flex-wrap  items-center mx-10 lg:mx-32">
-        <div className="w-full sm:w-1/2 lg:w-1/4 p-2 mb-10">
+      <div className="grid md:flex sm:grid-cols-2 lg:flex md:items-center md:justify-center lg:flex-row lg:justify-evenly lg:mx-4 p-5">
+        <div className="sm:col-span-2 lg:col-auto p-4 lg:mb-20">
           <h1 className="font-extrabold text-2xl">
             KOSMOS <hr /> INNOVATION <hr /> CENTER
           </h1>
@@ -18,13 +18,13 @@ const Partners = () => {
             INESTING IN THE FUTURE, ONE ENTREPRENEUR AT A TIME
           </p>
         </div>
-        <div className="w-full sm:w-1/2 lg:w-1/4 p-2 mb-10">
+        <div className="sm:col-span-1 lg:col-auto p-4 lg:mb-20">
           <img src={ug} alt="" />
         </div>
-        <div className="w-full sm:w-1/2 lg:w-1/4 p-2 mb-10 lg:order-last">
+        <div className="sm:col-span-1 lg:col-auto p-4 lg:mb-20">
           <img src={absa} alt="" />
         </div>
-        <div className="w-full sm:w-1/2 lg:w-1/4 p-2 mb-10 lg:order-last">
+        <div className="sm:col-span-1 lg:col-auto p-4 lg:mb-20">
           <img src={partner} alt="" />
         </div>
       </div>
