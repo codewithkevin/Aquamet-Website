@@ -1,4 +1,4 @@
-import { BiPlayCircle } from "react-icons/bi";
+import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 
 const Others = () => {
   return (
@@ -12,20 +12,20 @@ const Others = () => {
       <div className="mt-5 space-y-4 max-w-auto lg:max-w-lg">
         <div>
           <p className="font-medium flex items-center">
-            <span className="mr-2 text-blue-600">
-              <BiPlayCircle />
+            <span className="bg-[#ECFBFF] p-1 rounded-full">
+              <CheckRoundedIcon className="text-blue-600" fontSize="small" />
             </span>
-            <span>
+            <span className="ml-3">
               We approach fish farming with precision and data driven approach.
             </span>
           </p>
         </div>
         <div>
           <p className="font-medium flex items-center">
-            <span className="mr-2 text-blue-600">
-              <BiPlayCircle />
+            <span className="bg-[#ECFBFF] p-1 rounded-full">
+              <CheckRoundedIcon className="text-blue-600" fontSize="small" />
             </span>
-            <span>
+            <span className="ml-3">
               From production to marketing, we efficiently deploy cutting edge
               tools to assist smallholder farmers make more and obtain more at
               harvest

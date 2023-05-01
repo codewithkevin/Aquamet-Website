@@ -1,6 +1,7 @@
 import React from "react";
 import ug from "../../assests/Others/aquamet.png";
 import { BiPlayCircle } from "react-icons/bi";
+import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 
 const Approach = () => {
   return (
@@ -10,36 +11,36 @@ const Approach = () => {
         <div>
           <ul className="mt-4">
             <div className="flex flex-row items-center mb-3">
-              <span>
-                <BiPlayCircle />
+              <span className="bg-[#ECFBFF] p-1 rounded-full">
+                <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">Time Saving</h1>
             </div>
 
             <div className="flex flex-row items-center mb-3">
-              <span>
-                <BiPlayCircle />
+              <span className="bg-[#ECFBFF] p-1 rounded-full">
+                <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">Data Backed Advisory</h1>
             </div>
 
             <div className="flex flex-row items-center mb-3">
-              <span>
-                <BiPlayCircle />
+            <span className="bg-[#ECFBFF] p-1 rounded-full">
+                <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">Low Cost</h1>
             </div>
 
             <div className="flex flex-row items-center mb-3">
-              <span>
-                <BiPlayCircle />
+              <span className="bg-[#ECFBFF] p-1 rounded-full">
+                <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">Climate Friendly</h1>
             </div>
 
             <div className="flex flex-row items-center mb-3">
-              <span>
-                <BiPlayCircle />
+              <span className="bg-[#ECFBFF] p-1 rounded-full">
+                <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">
                 Tailored for increased yield at harvest
@@ -59,8 +60,8 @@ const Approach = () => {
 
           <div className="flex-col mt-5">
             <div className="flex flex-row items-center">
-              <span>
-                <BiPlayCircle />
+              <span className="bg-[#ECFBFF] p-1 rounded-full">
+                <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">
                 Tailored for increased yield at harvest
@@ -79,8 +80,8 @@ const Approach = () => {
           <h1 className="font-bold text-2xl">Our Approach</h1>
           <div className="flex-col mt-2">
             <div className="flex flex-row items-center">
-              <span>
-                <BiPlayCircle />
+              <span className="bg-[#ECFBFF] p-1 rounded-full">
+                <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">Time saving</h1>
             </div>
@@ -95,8 +96,8 @@ const Approach = () => {
 
           <div className="flex-col mt-2">
             <div className="flex flex-row items-center">
-              <span>
-                <BiPlayCircle />
+              <span className="bg-[#ECFBFF] p-1 rounded-full">
+                <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">Low cost</h1>
             </div>
@@ -110,8 +111,8 @@ const Approach = () => {
 
           <div className="flex-col mt-2">
             <div className="flex flex-row items-center">
-              <span>
-                <BiPlayCircle />
+              <span className="bg-[#ECFBFF] p-1 rounded-full">
+                <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">Data backed advisory</h1>
             </div>
@@ -125,8 +126,8 @@ const Approach = () => {
 
           <div className="flex-col mt-2">
             <div className="flex flex-row items-center">
-              <span>
-                <BiPlayCircle />
+              <span className="bg-[#ECFBFF] p-1 rounded-full">
+                <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">Climate friendly</h1>
             </div>
