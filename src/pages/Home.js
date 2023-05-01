@@ -9,6 +9,7 @@ import Products from "../components/Home/Products";
 import Mockup from "../components/Home/Mockup";
 import Testiomonial from "../components/Home/Testiomonial";
 import Solutions from "../components/Home/Solutions";
+import Newsletter from "../components/Home/Newsletter";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Mockup />
       <Testiomonial />
       <Solutions />
+      <Newsletter />
     </div>
   );
 };
