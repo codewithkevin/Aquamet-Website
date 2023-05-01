@@ -6,6 +6,7 @@ import Others from "../components/Home/Others";
 import Farmers from "../components/Home/Farmers";
 import Approach from "../components/Home/Approach";
 import Products from "../components/Home/Products";
+import Mockup from "../components/Home/Mockup";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Farmers />
       <Approach />
       <Products />
+      <Mockup />
     </div>
   );
 };
