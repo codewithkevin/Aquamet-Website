@@ -8,6 +8,7 @@ import Approach from "../components/Home/Approach";
 import Products from "../components/Home/Products";
 import Mockup from "../components/Home/Mockup";
 import Testiomonial from "../components/Home/Testiomonial";
+import Solutions from "../components/Home/Solutions";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Products />
       <Mockup />
       <Testiomonial />
+      <Solutions />
     </div>
   );
 };
