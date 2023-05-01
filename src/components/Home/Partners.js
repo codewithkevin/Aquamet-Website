@@ -9,24 +9,27 @@ const Partners = () => {
       <div className="flex justify-center">
         <h2 className="font-bold text-2xl my-4">Our trusted partners</h2>
       </div>
+
       <div className="grid md:flex sm:grid-cols-2 lg:flex md:items-center md:justify-center lg:flex-row lg:justify-evenly lg:mx-4 p-5">
-        <div className="sm:col-span-2 lg:col-auto p-4 lg:mb-20">
-          <h1 className="font-extrabold text-2xl">
+       
+        <div className="sm:col-span-1 lg:col-auto p-4 lg:mb-20">
+          <h1 className="font-extrabold text-xl">
             KOSMOS <hr /> INNOVATION <hr /> CENTER
           </h1>
-          <p className="font-bold text-xs max-w-[13rem]">
-            INESTING IN THE FUTURE, ONE ENTREPRENEUR AT A TIME
-          </p>
         </div>
+
         <div className="sm:col-span-1 lg:col-auto p-4 lg:mb-20">
           <img src={ug} alt="" />
         </div>
+
         <div className="sm:col-span-1 lg:col-auto p-4 lg:mb-20">
           <img src={absa} alt="" />
         </div>
+
         <div className="sm:col-span-1 lg:col-auto p-4 lg:mb-20">
           <img src={partner} alt="" />
         </div>
+
       </div>
     </div>
   );
