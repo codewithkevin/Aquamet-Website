@@ -26,7 +26,7 @@ const Mockup = () => {
           </div>
         </div>
 
-        <div className="basis-1/2 border-2 border-black flex justify-center items-center h-[50vh] sm:h-[70vh] md:h-[50vh]">
+        <div className="basis-1/2 border-2 border-black flex justify-center items-center h-[50vh] sm:h-[100vh] md:h-[30vh]">
           <h1 className="text-center text-xl font-bold">
             AQUASTALL MOCKUP <hr /> GOES HERE
           </h1>

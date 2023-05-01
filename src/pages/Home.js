@@ -7,6 +7,7 @@ import Farmers from "../components/Home/Farmers";
 import Approach from "../components/Home/Approach";
 import Products from "../components/Home/Products";
 import Mockup from "../components/Home/Mockup";
+import Test from "../components/Home/Test";
 
 const Home = () => {
   return (
