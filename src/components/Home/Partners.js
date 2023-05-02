@@ -14,7 +14,7 @@ const Partners = () => {
        
         <div className="sm:col-span-1 lg:col-auto p-4 lg:mb-20">
           <h1 className="font-extrabold text-xl">
-            KOSMOS <hr /> INNOVATION <hr /> CENTER
+            KOSMOS <br /> INNOVATION <br /> CENTER
           </h1>
         </div>
 

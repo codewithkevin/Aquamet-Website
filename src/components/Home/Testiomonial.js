@@ -48,7 +48,7 @@ const Testimonial = () => {
         <div className="text-lg mb-4 flex flex-row items-center mt-10">
           <div className="flex flex-col">
             <div className="flex flex-row items-center">
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Remy Sharp" src="" />
               <h6 className="ml-2">
                 {titles[activeIndex].name}
                 <hr />
