@@ -43,7 +43,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-[100vh] w-full justify-center">
+    <div loading="lazy" className="relative h-[100vh] w-full justify-center">
       <Carousel autoplay>
         <div>
           <div style={slideOne}>

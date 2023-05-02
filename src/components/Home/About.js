@@ -18,12 +18,12 @@ const About = () => {
           <p className="flow-root ... max-w-md text-gray-600 leading-[32px] mt-5">
             Aquamet is a registered company in Ghana that seeks to eradicate the
             numerous of uncertainties in aquaculture production using
-            technology. <hr className="mt-5" /> Our solution comes with a smart
+            technology. <br className="mt-5" /> Our solution comes with a smart
             probe for monitoring water quality remotely via SMS, mobile app and
             advisory both online(voice messages and interactive app) and
-            offline. <hr className="mt-5" /> Our primary goal is to foster
+            offline. <br className="mt-5" /> Our primary goal is to foster
             aquaculture production through reducing high mortalities and
-            increasing farmers’ yield. <hr className="mt-5" /> An array of
+            increasing farmers’ yield. <br className="mt-5" /> An array of
             assistive farm management tools such as feed estimator, record
             keeping, and management tips can also be found on our mobile app.
           </p>
@@ -46,8 +46,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mb-10">
-          <img className="md:flex lg:flex hidden" src={ug} alt="" />
+        <div loading="lazy" className="mb-10">
+          <img
+            className="md:flex lg:flex hidden md:mt-20 lg:mt-0"
+            src={ug}
+            alt=""
+          />
         </div>
       </div>
     </section>

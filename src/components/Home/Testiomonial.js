@@ -33,7 +33,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="flex md:flex-row sm:flex-col mx-5 lg:mx-28 pb-4 space-x-3 space-y-3 md:space-x-10">
+    <section className="flex md:flex-row sm:flex-col mx-5 lg:mx-28 pb-16 space-x-3 space-y-3 md:space-x-10 mt-10">
       <div className="basis-1/2 md:mt-[10rem]">
         {titles.map((title, index) => (
           <h1

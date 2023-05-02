@@ -5,7 +5,7 @@ import phone2 from "../../assests/Others/phone2.png";
 
 const Mockup = () => {
   return (
-    <section className="md:mt-5 pb-10">
+    <section loading="lazy" className="md:mt-5 pb-10">
       <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-28 pb-4 space-x-3 space-y-3 md:space-x-10">
         <div className="flex flex-col basis-1/2">
           <div>

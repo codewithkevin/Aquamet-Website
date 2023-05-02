@@ -5,7 +5,7 @@ import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 
 const Approach = () => {
   return (
-    <section className="md:mt-5 pb-10">
+    <section loading="lazy" className="md:mt-5 pb-10">
       <div className="hidden sm:flex md:hidden lg:hidden flex-col mx-5 ">
         <h1 className="font-bold text-2xl text-center">Our Approach</h1>
         <div>

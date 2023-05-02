@@ -17,7 +17,7 @@ const Farmers = () => {
           <p className="flow-root ... max-w-md text-gray-600 leading-[30px] mt-5">
             Our fish farmers are at the heart of what we do. We farm with them
             to obtain fish hand knowledge about the pain points and address them
-            with easy-to use technological tools. <hr className="mt-2" /> We are
+            with easy-to use technological tools. <br className="mt-2" /> We are
             currently working with some 500 fish farmers, mostly smallholder
             pond and cage farmers who are located in the Greater Accra, Kumasi
             and Asutuare in the Eastern region. Our key motivation is to empower
@@ -28,7 +28,7 @@ const Farmers = () => {
           </p>
         </div>
 
-        <div className="mt-14">
+        <div loading="lazy" className="mt-14">
           <img className="md:flex lg:flex hidden" src={ug} alt="" />
         </div>
       </div>
