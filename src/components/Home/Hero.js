@@ -49,7 +49,7 @@ const Hero = () => {
           <div style={slideOne}>
             <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
               <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
-                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative font-sans">
                   Reduce high mortalities and obtain 35% more fish at harvest
                   with our predictive management tools
                 </h1>
@@ -85,7 +85,7 @@ const Hero = () => {
           <div style={slideTwo}>
             <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
               <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
-                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative font-sans">
                   Revolutionizing Aquaculture with Smart Water Monitoring and
                   Farm Management Tools.
                 </h1>
@@ -121,7 +121,7 @@ const Hero = () => {
           <div style={slideThree}>
             <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
               <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
-                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative font-sans">
                   AquaStall: Buy/sell fish farm inputs and high-quality fish
                   from 500+ farmers.
                 </h1>
@@ -157,7 +157,7 @@ const Hero = () => {
           <div style={slideFour}>
             <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
               <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
-                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative font-sans">
                   Get expert advice and tools to improve your fish farm
                   production and harvest.
                 </h1>

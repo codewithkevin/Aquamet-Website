@@ -8,6 +8,10 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
+    fontFamily: {
+      sans: ["Manrope"],
+      serif: ["Poppins"],
+    },
     extend: {},
   },
   plugins: [],

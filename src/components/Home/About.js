@@ -14,8 +14,8 @@ const About = () => {
     <section className="mt-5 mx-5 mb-10">
       <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2">
         <div className="mt-5">
-          <strong className="text-3xl text-center">Aquamet Technologies</strong>
-          <p className="flow-root ... max-w-md text-gray-600 leading-[32px] mt-5">
+          <strong className="text-3xl text-center font-serif">Aquamet Technologies</strong>
+          <p className="flow-root ... max-w-md text-gray-600 leading-[32px] mt-5 font-serif">
             Aquamet is a registered company in Ghana that seeks to eradicate the
             numerous of uncertainties in aquaculture production using
             technology. <br className="mt-5" /> Our solution comes with a smart
