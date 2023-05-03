@@ -3,11 +3,11 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Footer from "./components/Home/Footer";
-import Aboutus from './pages/Aboutus';
 import Products from './pages/Products';
 import Solution from './pages/Solution';
 import News from './pages/News';
 import Contact from './pages/Contact';
+import Aboutus from './pages/AboutUs';
 
 const App = () => {
   return (
