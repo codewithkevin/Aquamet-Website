@@ -9,16 +9,21 @@ const Testimonial = () => {
 
   const titles = [
     {
-      title:
-        "Aquamet Helped  us at every step of the process, setting up our fish farm.",
-      name: "Katherine Mos",
-      position: "CEO, Welldone Fish Farm",
+      title: "Great product assisting farmers to reduce high mortalities.",
+      name: "Tetteh",
+      position: "CEO, Dynamo farms",
     },
     {
       title:
-        "Aquamet assisted us at every step of the process, setting up our fish farm.",
-      name: "Frank",
-      position: "CEO, Aquamet Company",
+        "Excellent service, they helped me set up my fish farm and provided training for me to produce fish with no prior experience",
+      name: "Abu",
+      position: "Adenta",
+    },
+    {
+      title:
+        "They assisted me to revamp my fish farm with their services and now my farm is profitable. Will highly recommend their services",
+      name: "Madam Patricia",
+      position: "Dodowa",
     },
   ];
 

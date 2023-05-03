@@ -1,15 +1,21 @@
 import { useState } from "react";
 import logo from "../assests/logo.png";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="flex items-center justify-between flex-wrap lg:px-[130px] px-6 py-2 bottom-1 border">
-      <div className="flex flex-row items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-        <img src={logo} className="top-2" alt="Logo" />
-        <h1 className="text-[#146A96] text-2xl font-extrabold ml-2">Aquamet</h1>
-      </div>
+      <Link to="/">
+        <div className="flex flex-row items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+          <img src={logo} className="top-2" alt="Logo" />
+          <h1 className="text-[#146A96] text-2xl font-extrabold ml-2">
+            Aquamet
+          </h1>
+        </div>
+      </Link>
       <div className="block lg:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -37,36 +43,38 @@ const NavMenu = () => {
         }`}
       >
         <div className="text-sm lg:flex-grow">
-          <a
+          <Link
+            to="/about"
             href="#"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
           >
             About Us
-          </a>
-          <a
+          </Link>
+          <Link
+            to="/products"
             href="#"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
           >
             Products
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/solution"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
           >
             Our Solution
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/news"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
           >
             News
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/contact"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
 
         <div className="flex flex-row items-center">

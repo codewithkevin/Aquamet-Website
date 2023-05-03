@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Products = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div className="w-full h-[100vh]"></div>;
+};
 
-export default Products
+export default Products;
