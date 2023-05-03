@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assests/logo.png";
+import logo from "../assests/logo512.png";
 import { Link, useNavigate } from "react-router-dom";
 
 const NavMenu = () => {
@@ -10,10 +10,7 @@ const NavMenu = () => {
     <nav className="flex items-center justify-between flex-wrap lg:px-[130px] px-6 py-2 bottom-1 border">
       <Link to="/">
         <div className="flex flex-row items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-          <img src={logo} className="top-2" alt="Logo" />
-          <h1 className="text-[#146A96] text-2xl font-extrabold ml-2">
-            Aquamet
-          </h1>
+          <img src={logo} className="top-2 w-20  h-18" alt="Logo" />
         </div>
       </Link>
       <div className="block lg:hidden">
