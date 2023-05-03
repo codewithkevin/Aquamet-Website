@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "antd";
-import phone from "../../assests/Others/phone1.png";
-import phone2 from "../../assests/Others/phone2.png";
+import mockup from "../../assests/Others/Mockup.png";
 
 const Mockup = () => {
   return (
@@ -29,23 +28,7 @@ const Mockup = () => {
         </div>
 
         <div className="basis-1/2  sm:mr-28">
-          <div className="relative h-[384.66px] mx-auto">
-            {/* <div className="absolute inset-0 bg-[#ECFBFF] rounded-full w-[70%] left-28"></div> */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
-              <img
-                src={phone}
-                alt="Phone"
-                className="h-[384.66px] object-contain"
-              />
-            </div>
-            <div className="absolute top-0 left-[49%]  mt-16 md:left-[49%] xl:left-[50%] xl:transform xl:-translate-x-50% xl:mt-10">
-              <img
-                src={phone2}
-                alt="Phone"
-                className="h-[384.66px] object-contain"
-              />
-            </div>
-          </div>
+          <img src={mockup} alt="" />
         </div>
 
         {/* <div className="basis-1/2 border-2 border-black flex justify-center items-center h-[50vh] sm:h-[100vh] sm:w-full md:h-[30vh]">
