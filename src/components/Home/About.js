@@ -17,7 +17,7 @@ const About = () => {
           <strong className="text-3xl text-center font-serif">Aquamet Technologies</strong>
           <p className="flow-root ... max-w-md text-gray-600 leading-[32px] mt-5 font-serif">
             Aquamet is a registered company in Ghana that seeks to eradicate the
-            numerous of uncertainties in aquaculture production using
+            numerous uncertainties in aquaculture production using
             technology. <br className="mt-5" /> Our solution comes with a smart
             probe for monitoring water quality remotely via SMS, mobile app and
             advisory both online(voice messages and interactive app) and
