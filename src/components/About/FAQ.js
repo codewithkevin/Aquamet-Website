@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "@mui/material";
 
 const faqs = [
   {
@@ -50,7 +51,9 @@ const FAQSection = () => {
         Frequently asked questions
       </h2>
 
-      <p className="text-center">Everything you need to know about Aquamet and our solutions.</p>
+      <p className="text-center">
+        Everything you need to know about Aquamet and our solutions.
+      </p>
       <div className="mt-6">
         {faqs.map((faq, index) => (
           <div key={index} className="border-t border-gray-200">
@@ -82,6 +85,18 @@ const FAQSection = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="bg-[#F9FAFB] w-full h-full mt-10 text-center space-y-5">
+        <h1>Still have questions?</h1>
+        <p>
+          Can’t find the answer you’re looking for? Please chat to our friendly
+          team.
+        </p>
+
+        <Button variant="contained" style={{ backgroundColor: "#146A96" }}>
+          Get in touch
+        </Button>
       </div>
     </div>
   );
