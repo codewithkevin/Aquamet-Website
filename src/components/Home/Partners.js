@@ -7,7 +7,7 @@ const Partners = () => {
   return (
     <div>
       <div className="flex justify-center">
-        <h2 className="font-bold text-2xl my-4">Our trusted partners</h2>
+        <h2 className="font-bold text-2xl my-4">Our Trusted Partners</h2>
       </div>
 
       <div className="grid md:flex sm:grid-cols-2 lg:flex md:items-center md:justify-center lg:flex-row lg:justify-evenly lg:mx-4 p-5">
