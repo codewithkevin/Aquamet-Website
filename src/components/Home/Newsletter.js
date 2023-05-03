@@ -6,7 +6,7 @@ const Newsletter = () => {
   return (
     <section className="bg-[#F9FAFB] w-full h-full mt-10">
       <div className="flex flex-col mt-10 items-center justify-center mx-5 pb-10">
-        <h1 className="mx-auto text-center font-bold text-3xl">
+        <h1 className="mx-auto text-center font-bold text-3xl mt-5">
           Sign up for our newsletter
         </h1>
 

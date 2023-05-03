@@ -28,7 +28,7 @@ const Team = () => {
           <div className="sm:col-span-1 lg:col-auto p-4 lg:mb-20 text-center space-y-3">
             <img className="rounded-full" src={person3} alt="" />
             <h1 className="font-bold font-serif">Gabriel Lorlornyo</h1>
-            <h6 className="text-[#146A96]">Co-Founder & CEO</h6>
+            <h6 className="text-[#146A96]">Co-Founder & CTO</h6>
           </div>
          
          
