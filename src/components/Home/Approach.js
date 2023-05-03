@@ -1,5 +1,5 @@
 import React from "react";
-import ug from "../../assests/Others/aquamet.png";
+import ug from "../../assests/Others/approach.png";
 import { BiPlayCircle } from "react-icons/bi";
 import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 
