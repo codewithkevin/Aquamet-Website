@@ -1,7 +1,15 @@
 import React from "react";
 import { Button } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const Products = () => {
+  const navigate = useNavigate();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    navigate("/products");
+  }
+
   return (
     <section className="flex flex-col items-center justify-center mx-5 pb-10">
       <h1 className="mx-auto text-center font-bold text-3xl">
@@ -19,6 +27,7 @@ const Products = () => {
       <div>
         <div className="mt-5">
           <Button
+            onClick={handleSubmit}
             className="bg-white text-[#146A96] font-medium md:w-[150px] sm:w-[300px] border-2 border-[#146A96]"
             type="primary"
             size="large"
