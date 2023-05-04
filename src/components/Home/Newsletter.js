@@ -6,7 +6,7 @@ const Newsletter = () => {
   return (
     <section className="bg-[#F9FAFB] w-full h-full mt-10">
       <div className="flex flex-col mt-10 items-center justify-center mx-5 pb-10">
-        <h1 className="mx-auto text-center font-bold text-3xl mt-5">
+        <h1 className="mx-auto text-center font-bold text-3xl">
           Sign up for our newsletter
         </h1>
 
@@ -16,7 +16,7 @@ const Newsletter = () => {
           </p>
         </div>
 
-        <div className="mt-10 flex flex-row items-center mb-5">
+        <div className="mt-10 flex md:flex-row items-center sm:flex-col mb-5 space-x-3">
           <Box
             component="form"
             sx={{
@@ -26,7 +26,7 @@ const Newsletter = () => {
               },
             }}
             noValidate
-            autoComplete="off"
+            autoComplete="on"
           >
             <TextField
               id="outlined-basic"
@@ -36,7 +36,7 @@ const Newsletter = () => {
           </Box>
 
           <Button
-            className="bg-[#146A96] font-medium sm:ml-5"
+            className="bg-[#146A96] font-medium md:w-[150px] sm:w-full border-2 border-[#146A96]"
             type="primary"
             size="large"
           >
