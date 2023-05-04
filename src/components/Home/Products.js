@@ -17,9 +17,9 @@ const Products = () => {
       </div>
 
       <div>
-        <div className="mt-5 space-x-5 flex flex-row top-10">
+        <div className="mt-5">
           <Button
-            className="bg-white text-[#146A96] font-medium w-[150px] border-2 border-[#146A96]"
+            className="bg-white text-[#146A96] font-medium md:w-[150px] sm:w-[300px] border-2 border-[#146A96]"
             type="primary"
             size="large"
           >

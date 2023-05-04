@@ -7,7 +7,7 @@ const Approach = () => {
   return (
     <section loading="lazy" className="md:mt-5 pb-10">
       <div className="hidden sm:flex md:hidden lg:hidden flex-col mx-5 ">
-        <h1 className="font-bold text-2xl text-center">Our Approach</h1>
+        <h1 className="font-bold text-3xl text-center">Our Approach</h1>
         <div>
           <ul className="mt-4">
             <div className="flex flex-row items-center mb-3">

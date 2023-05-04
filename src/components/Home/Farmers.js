@@ -28,8 +28,8 @@ const Farmers = () => {
           </p>
         </div>
 
-        <div loading="lazy" className="mt-14">
-          <img className="md:flex lg:flex hidden" src={ug} alt="" />
+        <div loading="lazy" className="mt-14 sm:mt-2">
+          <img className="md:flex lg:flex " src={ug} alt="" />
         </div>
       </div>
     </section>
