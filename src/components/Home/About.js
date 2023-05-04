@@ -28,7 +28,7 @@ const About = () => {
             keeping, and management tips can also be found on our mobile app.
           </p>
 
-          <div className="mt-10 flex flex-row justify-start space-x-5">
+          <div className="mt-10 flex md:flex-row sm:flex-col  justify-start md:space-x-5 sm:space-y-5 md:space-y-0">
             <button
               onClick={handleSubmit}
               className="bg-[#ffffff] hover:bg-blue-900 text-black  top-0 rounded-lg  px-5 py-2 border-2"
