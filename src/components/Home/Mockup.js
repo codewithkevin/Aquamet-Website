@@ -5,7 +5,7 @@ import mockup from "../../assests/Others/Mockup.png";
 const Mockup = () => {
   return (
     <section loading="lazy" className="md:mt-5 pb-10">
-      <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-28 pb-4 space-x-3 space-y-3 md:space-x-10">
+      <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] pb-4 space-x-3 space-y-3 md:space-x-10">
         <div className="flex flex-col basis-1/2">
           <div>
             <h1 className="text-2xl font-bold mb-4">AquaStall - Marketplace</h1>

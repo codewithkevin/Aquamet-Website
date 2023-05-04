@@ -5,8 +5,7 @@ import phone2 from "../../assests/Others/phone2.png";
 const Solutions = () => {
   return (
     <section className="md:mt-10 pb-10">
-      <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-28 pb-4 space-y-3 md:space-x-10 lg:space-x-5">
-        
+      <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] lg lg:max-40 pb-4 space-y-3 md:space-x-10 lg:space-x-5">
         <div className="flex flex-col basis-1/2">
           <div className="md:max-w-md">
             <h1 className="text-4xl font-bold mb-4">
