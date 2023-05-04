@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assests/logo2.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,31 +12,35 @@ const Footer = () => {
 
         <div>
           <ul className="md:flex md:flex-wrap sm:grid sm:grid-cols-2 space-x-4">
-            <li className="text-white sm:inline-block sm:ml-5">
-              <a href="">Home</a>
-            </li>
-            <li className="text-white sm:inline-block sm:text-left">
-              <a href="">About Us</a>
-            </li>
-            <li className="text-white sm:inline-block sm:text-left">
+            <Link to="/">
+              <li className="text-white sm:inline-block sm:ml-5">Home</li>
+            </Link>
 
-              <a href="">Our Solution</a>
-            </li>
-            <li className="text-white sm:inline-block sm:text-left">
+            <Link to="/about">
+              <li className="text-white sm:inline-block sm:text-left">
+                About Us
+              </li>
+            </Link>
 
-              <a href="">News</a>
-            </li>
-            <li className="text-white sm:inline-block sm:text-left">
+            <Link to="/solution">
+              <li className="text-white sm:inline-block sm:text-left">
+                Our Solution
+              </li>
+            </Link>
 
-              <a href="">Contact Us</a>
-            </li>
-            <li className="text-white">
-              <a href="">Terms</a>
-            </li>
-            <li className="text-white sm:inline-block sm:text-left">
+            <Link to="/news">
+              <li className="text-white sm:inline-block sm:text-left">News</li>
+            </Link>
 
-              <a href="">Privacy</a>
-            </li>
+            <Link to="/contact">
+              <li className="text-white sm:inline-block sm:text-left">
+                Contact Us
+              </li>
+            </Link>
+
+            <li className="text-white">Terms</li>
+            <li className="text-white sm:inline-block sm:text-left">Privacy</li>
+          
           </ul>
         </div>
 
