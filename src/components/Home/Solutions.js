@@ -7,7 +7,7 @@ const Solutions = () => {
     <section className="md:mt-10 pb-10">
       <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] lg lg:max-40 pb-4 space-y-3 md:space-x-10 lg:space-x-5">
         <div className="flex flex-col basis-1/2">
-          <div className="md:max-w-md">
+          <div className="md:max-w-md sm:max-w-xs max-auto">
             <h1 className="text-4xl font-bold mb-4">
               All-in-one <span className="text-[#146A96]">Solution</span> for
               any fish farm
@@ -45,7 +45,11 @@ const Solutions = () => {
           </div>
         </div>
 
-        <div className="basis-1/2  sm:mr-28">
+        <div className="md:hidden sm:flex sm:justify-center w-[285px] h-[431px] ml-5">
+          <img src={phone2} alt="" />
+        </div>
+
+        <div className="basis-1/2 sm:mr-28 md:block sm:hidden">
           <div className="relative h-[384.66px] mx-auto">
             {/* <div className="absolute inset-0 bg-[#ECFBFF] rounded-full w-[70%] left-28"></div> */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
