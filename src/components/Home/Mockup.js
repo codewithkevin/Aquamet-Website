@@ -30,7 +30,7 @@ const Mockup = () => {
         </div>
 
         <div className="basis-1/2 mt-10">
-          <img src={mockup} alt="" />
+          <img src={mockup} alt="aquamet" />
         </div>
       </div>
     </section>
