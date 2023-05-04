@@ -21,7 +21,7 @@ const Approach = () => {
               <span className="bg-[#ECFBFF] p-1 rounded-full">
                 <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
-              <h1 className="text-lg font-bold ml-2">Data Backed Advisory</h1>
+              <h1 className="text-lg font-bold ml-2">Data Backed Advisory.</h1>
             </div>
 
             <div className="flex flex-row items-center mb-3">
