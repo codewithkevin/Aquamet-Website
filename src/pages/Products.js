@@ -2,6 +2,8 @@ import React from "react";
 import Intro from "../components/Products/Intro";
 import Solutions from "../components/Home/Solutions";
 import Mockup from "../components/Home/Mockup";
+import Newsletter from "../components/Home/Newsletter";
+import Start from "../components/Products/Start";
 
 const Products = () => {
   return (
@@ -9,6 +11,8 @@ const Products = () => {
       <Intro />
       <Solutions />
       <Mockup />
+      <Start />
+      <Newsletter />
     </div>
   );
 };

@@ -38,6 +38,10 @@ const Intro = () => {
               and with daily SMS notifications to the farmers phone or connected
               device.
             </p>
+
+            <button class="bg-[#146A96]  text-white mt-10 font-normal py-2 px-4 rounded border-[#146A96]">
+              Get the smart probe
+            </button>
           </div>
 
           <div
