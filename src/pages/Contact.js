@@ -1,8 +1,16 @@
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import TextField from "@mui/material/TextField";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+import { useState } from "react";
+import Checkbox from "@mui/material/Checkbox";
+import { Button } from "@mui/material";
+import Newsletter from "../components/Home/Newsletter";
 
 const Contact = () => {
+  const [value, setValue] = useState();
+
   return (
     <div className="w-full h-full mt-20 mb-5 space-y-10">
       <section className="flex flex-col justify-center items-center space-y-10 pb-20">
@@ -69,8 +77,8 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="flex flex-col space-y-5">
-            <div className="flex md:flex-row sm:flex-col sm:items-center md:space-y-0 sm:space-y-10 md:justify-between gap-0 md:gap-[10rem] lg:gap-[15rem]">
+          <div className="flex flex-col space-y-5 md:mx-0 sm:mx-5">
+            <div className="flex md:flex-row sm:flex-col md:space-y-0 sm:space-y-10 md:justify-between gap-0 md:gap-[10rem] lg:gap-[15rem]">
               <div className="flex flex-col">
                 <h6 className="font-serif text-[14px] leading-[20px] mb-4 ml-1">
                   First name
@@ -104,10 +112,49 @@ const Contact = () => {
               />
             </div>
 
-            
+            <div className="flex flex-col">
+              <h6 className="font-serif text-[14px] leading-[20px] mb-2 ml-1">
+                Phone Number
+              </h6>
+              <div className="flex items-center border border-gray-300 rounded-md p-2">
+                <PhoneInput
+                  placeholder="Enter phone number"
+                  value={value}
+                  onChange={setValue}
+                  className="flex-1 outline-none"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <h6 className="font-serif text-[14px] leading-[20px] mb-2 ml-1">
+                Message
+              </h6>
+
+              <TextField
+                id="outlined-multiline-static"
+                label="Leava your meassage......"
+                multiline
+                rows={4}
+                defaultValue=""
+              />
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-2">
+              <Checkbox />
+              <h6 className="font-serif text-sm">
+                You agree to our friendly privacy policy.
+              </h6>
+            </div>
+
+            <Button variant="contained" sx={{ backgroundColor: "#146A96" }}>
+              Send message
+            </Button>
           </div>
         </div>
       </section>
+
+      <Newsletter />
     </div>
   );
 };
