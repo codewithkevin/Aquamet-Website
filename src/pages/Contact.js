@@ -2,14 +2,12 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import TextField from "@mui/material/TextField";
 import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
-import { useState } from "react";
 import Checkbox from "@mui/material/Checkbox";
 import { Button } from "@mui/material";
 import Newsletter from "../components/Home/Newsletter";
+import PhonePicker from "../components/Essentials/PhonePicker";
 
 const Contact = () => {
-  const [value, setValue] = useState();
 
   return (
     <div className="w-full h-full mt-20 mb-5 space-y-10">
@@ -112,19 +110,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="flex flex-col">
-              <h6 className="font-serif text-[14px] leading-[20px] mb-2 ml-1">
-                Phone Number
-              </h6>
-              <div className="flex items-center border border-gray-300 rounded-md p-2">
-                <PhoneInput
-                  placeholder="Enter phone number"
-                  value={value}
-                  onChange={setValue}
-                  className="flex-1 outline-none"
-                />
-              </div>
-            </div>
+            <PhonePicker />
 
             <div className="flex flex-col">
               <h6 className="font-serif text-[14px] leading-[20px] mb-2 ml-1">
