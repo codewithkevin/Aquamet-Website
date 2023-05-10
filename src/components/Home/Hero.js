@@ -11,16 +11,17 @@ import DemoPopup from "../Essentials/DemoPopup";
 
 const Hero = () => {
   const slideOne = {
-    height: "90vh",
+    height: "100vh",
     color: "#fff",
     lineHeight: "160px",
     backgroundImage: `url(${slide1})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.9)", // Adjust opacity as needed
   };
 
   const slideTwo = {
-    height: "90vh",
+    height: "100vh",
     color: "#fff",
     lineHeight: "160px",
     backgroundImage: `url(${slide2})`,
@@ -29,7 +30,7 @@ const Hero = () => {
   };
 
   const slideThree = {
-    height: "90vh",
+    height: "100vh",
     color: "#fff",
     lineHeight: "160px",
     backgroundImage: `url(${slide3})`,
@@ -38,7 +39,7 @@ const Hero = () => {
   };
 
   const slideFour = {
-    height: "90vh",
+    height: "100vh",
     color: "#fff",
     lineHeight: "160px",
     backgroundImage: `url(${slide4})`,
@@ -60,14 +61,16 @@ const Hero = () => {
     <div loading="lazy" className="relative h-[100vh] w-full justify-center">
       <Carousel autoplay>
         <div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)] opacity-20"></div>
+
           <div style={slideOne}>
             <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
               <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
-                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative font-sans">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-medium tracking-wide z-10 relative font-lato">
                   Reduce high mortalities and obtain 35% more fish at harvest
                   with our predictive management tools
                 </h1>
-                <p className="text-white mt-5">
+                <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
                   Empowering Aquaculture Production Through Technology.
                 </p>
               </div>
@@ -101,11 +104,11 @@ const Hero = () => {
           <div style={slideTwo}>
             <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
               <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
-                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative font-sans">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-medium tracking-wide z-10 relative font-lato">
                   Revolutionizing Aquaculture with Smart Water Monitoring and
                   Farm Management Tools.
                 </h1>
-                <p className="text-white mt-5">
+                <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
                   Empowering Aquaculture Production Through Technology.
                 </p>
               </div>
@@ -139,11 +142,11 @@ const Hero = () => {
           <div style={slideThree}>
             <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
               <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
-                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative font-sans">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-medium tracking-wide z-10 relative font-lato">
                   AquaStall: Buy/sell fish farm inputs and high-quality fish
                   from 500+ farmers.
                 </h1>
-                <p className="text-white mt-5">
+                <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
                   Empowering Aquaculture Production Through Technology.
                 </p>
               </div>
@@ -177,11 +180,11 @@ const Hero = () => {
           <div style={slideFour}>
             <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
               <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
-                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide z-10 relative font-sans">
+                <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-medium tracking-wide z-10 relative font-lato">
                   Get expert advice and tools to improve your fish farm
                   production and harvest.
                 </h1>
-                <p className="text-white mt-5">
+                <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
                   Empowering Aquaculture Production Through Technology.
                 </p>
               </div>

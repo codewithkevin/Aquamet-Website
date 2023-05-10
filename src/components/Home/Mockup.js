@@ -4,10 +4,10 @@ import mockup from "../../assests/Others/Mockup.png";
 
 const Mockup = () => {
   return (
-    <section loading="lazy" className="md:mt-5 pb-10 sm:mt-10">
+    <section loading="lazy" className="md:mt-20 pb-10 sm:mt-10">
       <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] pb-4 space-x-3 space-y-3 md:space-x-10">
         <div className="flex flex-col basis-1/2 sm:mb-20 mb-0">
-          <div>
+          <div className="mt-0 lg::mt-14 md:mt-10">
             <h1 className="text-2xl font-bold mb-4">
               AquaStall <span className=""> - Marketplace</span>
             </h1>
@@ -18,7 +18,7 @@ const Mockup = () => {
             </p>
           </div>
 
-          <div className="flex sm:justify-center md:justify-normal">
+          <div className="flex sm:justify-center md:justify-normal mt-0 lg:mt-10">
             <Button
               className="bg-[#146A96] font-medium md:w-[150px] sm:w-[450px] text-center"
               type="primary"
@@ -29,7 +29,7 @@ const Mockup = () => {
           </div>
         </div>
 
-        <div className="basis-1/2 mt-10">
+        <div className="basis-1/2 mt-10 border-4 border-black rounded-xl">
           <img src={mockup} alt="aquamet" />
         </div>
       </div>

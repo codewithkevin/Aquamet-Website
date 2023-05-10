@@ -9,8 +9,10 @@ module.exports = {
       xl: "1440px",
     },
     fontFamily: {
-      sans: ["Manrope", 'serif'],
-      serif: ["Poppins", 'sans-serif'],
+      sans: ["Manrope", "serif"],
+      serif: ["Poppins", "sans-serif"],
+      lato: ["Lato", "sans-serif"],
+      manrope: ["Manrope", "sans-serif"],
     },
     extend: {},
   },

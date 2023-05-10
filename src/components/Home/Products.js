@@ -11,12 +11,12 @@ const Products = () => {
   }
 
   return (
-    <section className="flex flex-col items-center justify-center mx-5 pb-10">
-      <h1 className="mx-auto text-center font-bold text-3xl">
+    <section className="flex flex-col items-center justify-center pb-10 bg-[#B2E2FB]">
+      <h1 className="mx-auto text-center font-bold text-3xl mt-10">
         Our Products and Services
       </h1>
 
-      <div className="mt-5 max-w-auto lg:max-w-2xl">
+      <div className="mt-5 max-w-auto lg:max-w-2xl mx-5">
         <p>
           Aquamet smart probe, Aquamet Mobile App which offers expert advisory
           services, feed estimator and record keeping, Aquastall for buying and

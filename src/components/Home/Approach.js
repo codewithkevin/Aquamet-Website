@@ -49,13 +49,13 @@ const Approach = () => {
         </div>
 
         <div className="flex mt-3">
-          <img className="md:hidden lg:hidden flex" src={ug} alt="" />
+          <img className="md:hidden lg:hidden flex rounded-3xl" src={ug} alt="" />
         </div>
       </div>
 
       <div class="md:flex flex-row mx-5 lg:mx-28 pb-4 space-x-3 md:space-x-10  sm:hidden">
         <div class="basis-1/2 md:flex hideen flex flex-col">
-          <img className="md:flex lg:flex hidden" src={ug} alt="" />
+          <img className="md:flex lg:flex hidden rounded-3xl" src={ug} alt="" />
 
           <div className="flex-col mt-5">
             <div className="flex flex-row items-center">

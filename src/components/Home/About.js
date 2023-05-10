@@ -16,26 +16,36 @@ const About = () => {
   }
 
   return (
-    <section className="mt-5 mx-5 mb-10">
+    <section className="mt-5 md:mt-20  mx-5 mb-10">
       <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2">
-        <div className="mt-5">
-          <strong className="text-3xl text-center font-serif">
+        <div className="md:mt-10 sm:mt-4">
+          <strong className="text-[26px] font-medium text-center font-serif">
             Aquamet Technologies
           </strong>
-          <p className="flow-root ... max-w-md text-gray-600 leading-[32px] mt-5 font-serif">
-            Aquamet is a registered company in Ghana that seeks to eradicate the
-            numerous uncertainties in aquaculture production using technology.{" "}
-            <br className="mt-5" /> Our solution comes with a smart probe for
-            monitoring water quality remotely via SMS, mobile app and advisory
-            both online(voice messages and interactive app) and offline.{" "}
-            <br className="mt-5" /> Our primary goal is to foster aquaculture
-            production through reducing high mortalities and increasing farmers’
-            yield. <br className="mt-5" /> An array of assistive farm management
-            tools such as feed estimator, record keeping, and management tips
-            can also be found on our mobile app.
-          </p>
+          <div className="flow-root ... max-w-md text-gray-600 leading-[32px] mt-2 font-serif space-y-3">
+            <p>
+              Aquamet is a registered company in Ghana that seeks to eradicate
+              the numerous uncertainties in aquaculture production using
+              technology.
+            </p>
+            <p>
+              Our solution comes with a smart probe for monitoring water quality
+              remotely via SMS, mobile app and advisory both online(voice
+              messages and interactive app) and offline.
+            </p>
+            <p>
+              Our primary goal is to foster aquaculture production through
+              reducing high mortalities and increasing farmers’ yield.
+            </p>
+            <p>
+              {" "}
+              An array of assistive farm management tools such as feed
+              estimator, record keeping, and management tips can also be found
+              on our mobile app.
+            </p>
+          </div>
 
-          <div className="mt-10 flex md:flex-row sm:flex-col  justify-start md:space-x-5 sm:space-y-5 md:space-y-0">
+          <div className="mt-5 flex md:flex-row sm:flex-col  justify-start md:space-x-5 sm:space-y-5 md:space-y-0">
             <button
               onClick={contactSubmit}
               className="bg-[#ffffff] hover:bg-blue-900 hover:text-white text-black  top-0 rounded-lg  px-5 py-2 border-2"
@@ -53,9 +63,9 @@ const About = () => {
           </div>
         </div>
 
-        <div loading="lazy" className="mb-10">
+        <div loading="lazy" className="mb-10 mt-0 sm:mt-5">
           <img
-            className="md:flex lg:flex hidden md:mt-20 lg:mt-0"
+            className="md:flex lg:flex  md:mt-2 lg:mt-0 rounded-3xl"
             src={ug}
             alt=""
           />

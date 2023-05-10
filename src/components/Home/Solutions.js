@@ -4,9 +4,9 @@ import phone2 from "../../assests/Others/phone2.png";
 
 const Solutions = () => {
   return (
-    <section className="md:mt-10 pb-10">
+    <section className="mt-10 md:mt-20">
       <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] lg lg:max-40 pb-4 space-y-3 md:space-x-10 lg:space-x-5">
-        <div className="flex flex-col basis-1/2">
+        <div className="flex flex-col basis-1/2 mt-0  md:mt-24">
           <div className="md:max-w-md sm:max-w-xs max-auto">
             <h1 className="text-4xl font-bold mb-4">
               All-in-one <span className="text-[#146A96]">Solution</span> for
