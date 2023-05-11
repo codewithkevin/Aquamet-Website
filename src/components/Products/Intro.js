@@ -2,19 +2,19 @@ import device from "../../assests/Others/device.png";
 
 const Intro = () => {
   return (
-    <section className="flex flex-col justify-center items-center space-y-10 pb-20">
-      <div className="mb-7  lg:mb-14">
-        <h1 className="text-[#146A96] font-serif font-normal text-[16px] leading-[24px] text-center">
+    <section className="flex flex-col justify-center items-center space-y-10 pb-2">
+      <div className="mb-7 lg:mb-14 bg-[#B2E2FB] w-full h-full p-20 flex flex-col items-center justify-center">
+        <h1 className="text-[#146A96] font-serif font-bold text-[16px] leading-[24px] text-center">
           Our Products
         </h1>
 
         <div className="mt-4">
-          <h1 className="font-serif font-bold text-[48px] leading-[60px] text-center ">
+          <h1 className="font-serif font-bold text-[48px] leading-[60px] text-center">
             Aquamet Products
           </h1>
 
-          <div className="mx-0 mt-5 space-y-4 max-w-auto sm:mx-5  sm:flex sm:flex-col sm:items-center md:text-justify md:max-w-lg lg:max-w-lg">
-            <p className="">
+          <div className="mx-0 mt-5 space-y-4 max-w-auto sm:mx-5 sm:flex sm:flex-col sm:items-center md:text-justify md:max-w-lg lg:max-w-lg">
+            <p className="font-serif font-normal text-center leading-[30px]">
               Powerful, self-serve product and growth analytics to help you
               convert, engage, and retain more customers. Trusted by best
               companies.
@@ -31,7 +31,7 @@ const Intro = () => {
                 Aquamet Smart Probe
               </strong>
             </div>
-            <p className="flow-root max-w-md text-gray-600 leading-[32px] mt-5 font-serif">
+            <p className="flow-root max-w-2xl text-gray-600 leading-[32px] mt-5 font-serif">
               Our smart probe is an submersible probe, which makes water quality
               monitoring and management easily accessible everywhere on 24/7
               basis. Water quality is monitored in real time on our mobile app
@@ -46,20 +46,28 @@ const Intro = () => {
 
           <div
             loading="lazy"
-            className="mb-10  border-4 p-6 rounded-tl-[180px] rounded-br-[180px] border-[#146A96]"
+            className="border-[#146A96] mt-10 rounded-xl overflow-hidden md:pt-5"
           >
-            <img className="" src={device} alt="" />
+            <div className="border-4 border-[#146A96] rounded-tl-[6rem] rounded-br-[6rem] p-5">
+              <img
+                className="w-full h-full object-fit-cover"
+                src={device}
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="mt- l mb-7 mx-5  lg:mb-14">
-        <strong className="text-2xl font-serif">Aquamet Mobile App</strong>
-        <div className="max-w-md  md:max-w-6xl space-y-3 mt-2">
+      <div className="mt- l mb-7 mx-5 lg:mb-14 flex flex-col items-center space-y-10  bg-[#B2E2FB] w-full p-20">
+        <div className="max-w-md md:max-w-6xl space-y-3 mt-2">
+          <strong className="text-2xl font-serif text-left">
+            Aquamet Mobile App
+          </strong>
           <p>
-            Use our engineered management tools for a fish better yield. (
-            real-time advisory with aquaculture experts anytime, feed estimator,
-            record keeping , water quality monitoring and many more).
+            Use our engineered management tools for a fish better yield.
+            (real-time advisory with aquaculture experts anytime, feed
+            estimator, record keeping , water quality monitoring and many more).
           </p>
           <p>
             Expert advisory services; Right from facility(ponds, tarpaulin
