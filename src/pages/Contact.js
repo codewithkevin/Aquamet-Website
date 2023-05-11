@@ -10,7 +10,7 @@ import PhonePicker from "../components/Essentials/PhonePicker";
 const Contact = () => {
 
   return (
-    <div className="w-full h-full mt-20 mb-5 space-y-10">
+    <div className="w-full h-full mt-20 space-y-10">
       <section className="flex flex-col justify-center items-center space-y-10 pb-20">
         <div className="mb-7  lg:mb-14">
           <h1 className="text-[#146A96] font-serif font-normal text-[16px] leading-[24px] text-center">

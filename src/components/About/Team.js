@@ -8,10 +8,6 @@ const Team = () => {
       <div>
         <div className="flex flex-col items-center text-center">
           <h2 className="font-bold text-2xl my-4">Meet Our Team</h2>
-          <p>
-            Our philosophy is simple — hire a team of diverse, passionate people
-            and foster a culture that empowers you to do your best work.
-          </p>
         </div>
 
         <div className="grid md:flex sm:grid-cols lg:flex md:items-center justify-center lg:flex-row lg:justify-evenly lg:mx-4 p-5">
@@ -30,8 +26,6 @@ const Team = () => {
             <h1 className="font-bold font-serif">Gabriel Lorlornyo</h1>
             <h6 className="text-[#146A96]">Co-Founder & CTO</h6>
           </div>
-         
-         
         </div>
       </div>
     </section>

@@ -87,7 +87,7 @@ const FAQSection = () => {
         ))}
       </div>
 
-      <div className="bg-[#F9FAFB] w-full h-full mt-10 text-center space-y-5">
+      <div className="bg-[#B2E2FB] w-full h-full mt-10 text-center space-y-5 p-5">
         <h1>Still have questions?</h1>
         <p>
           Can’t find the answer you’re looking for? Please chat to our friendly

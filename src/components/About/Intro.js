@@ -42,7 +42,7 @@ const Intro = () => {
           <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2 lg:space-x-7">
             <div className="mt-5 md:mt-20">
               <div className="sm:text-center md:text-left">
-                <strong className="text-3xl font-serif">
+                <strong className="text-[36px] leading-[44px] font-serif font-semibold">
                   We’re an impact driven company
                 </strong>
               </div>
@@ -96,7 +96,7 @@ const Intro = () => {
           </div>
         </div>
 
-        <div className="mt-5 lg:mt-10 mx-5 mb-7  lg:mb-14">
+        <div className="mt-5 lg:mt-10 mx-5 mb-7  md:mb-14">
           <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-2 lg:space-x-7">
             <div className="mt-5 md:mt-20 ">
               <div className=" md:text-left sm:text-center">
@@ -131,32 +131,6 @@ const Intro = () => {
                 src={group2}
                 alt=""
               />
-            </div>
-          </div>
-        </div>
-
-        <div className="mb-7">
-          <div className="mt-4">
-            <h1 className="font-serif font-normal text-[40px] leading-[60px] text-center ">
-              Our Products and Services
-            </h1>
-
-            <div className="mx-0 mt-5 space-y-4 max-w-auto sm:mx-5  sm:flex sm:flex-col sm:items-center md:text-justify md:max-w-lg lg:max-w-lg">
-              <p className="">
-                Aquamet smart probe, Aquamet Mobile App which offers expert
-                advisory services, feed estimator and record keeping, Aquastall
-                for buying and selling products and more.
-              </p>
-            </div>
-
-            <div className="mx-0 mt-5  max-w-auto  sm:flex sm:flex-col sm:items-center md:text-justify md:max-w-lg  sm:max-w-5xl">
-              <Button
-                className="font-medium border-2 border-[#146A96] text-[#146A96]"
-                type="primary"
-                size="large"
-              >
-                Read More
-              </Button>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ import Newsletter from "../components/Home/Newsletter";
 
 const Solution = () => {
   return (
-    <section className="w-full h-full mt-20 mb-5">
+    <section className="w-full h-full mt-20">
       <section class="flex flex-col justify-center items-center sm:space-y-10  md:space-y-44 pb-20 mx-5">
         <div className="space-y-10">
           <h1 className="text-[#146A96] font-serif font-normal text-[16px] leading-[24px] text-center">
