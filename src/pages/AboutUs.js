@@ -6,7 +6,7 @@ import FAQSection from "../components/About/FAQ";
 
 const Aboutus = () => {
   return (
-    <div className="w-full h-full mt-20 mb-5">
+    <div className="w-full h-full  mb-5">
       <Intro />
       <Team />
       <FAQSection />
