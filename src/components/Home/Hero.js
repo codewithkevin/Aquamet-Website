@@ -61,7 +61,6 @@ const Hero = () => {
     <div loading="lazy" className="relative h-[100vh] w-full justify-center">
       <Carousel autoplay>
         <div>
-          {/* <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)] opacity-20"></div> */}
 
           <div style={slideOne}>
             <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
