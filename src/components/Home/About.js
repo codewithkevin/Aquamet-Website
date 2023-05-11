@@ -24,7 +24,7 @@ const About = () => {
               Aquamet Technologies
             </strong>
           </div>
-          <div className="flow-root ... max-w-2xl  mt-2  space-y-5">
+          <div className="flow-root ... max-w-2xl  mt-2 md:space-y-2 space-y-5">
             <p className="font-serif text-[18px] leading-[28px] text-gray-600 font-normal">
               Aquamet is a registered company in Ghana that seeks to eradicate
               the numerous uncertainties in aquaculture production using
@@ -40,7 +40,6 @@ const About = () => {
               reducing high mortalities and increasing farmers’ yield.
             </p>
             <p className="font-serif text-[18px] leading-[28px] text-gray-600 font-normal">
-              {" "}
               An array of assistive farm management tools such as feed
               estimator, record keeping, and management tips can also be found
               on our mobile app.
@@ -65,7 +64,7 @@ const About = () => {
           </div>
         </div>
 
-        <div loading="lazy" className="mb-10 mt-0 sm:mt-5">
+        <div loading="lazy" className="mb-10 mt-0 sm:mt-5 lg:mt-0 md:mt-[8rem]">
           <img
             className="md:flex lg:flex  md:mt-2 lg:mt-0 rounded-3xl"
             src={ug}
