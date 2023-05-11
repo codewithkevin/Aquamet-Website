@@ -4,9 +4,9 @@ import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 
 const Approach = () => {
   return (
-    <section loading="lazy" className="md:mt-5 pb-10">
+    <section loading="lazy" className="pb-10">
       <div className="hidden sm:flex md:hidden lg:hidden flex-col mx-5 ">
-        <h1 className="font-bold text-3xl text-center">Our Approach</h1>
+        <h1 className="font-semibold text-[36px] text-center font-serif">Our Approach</h1>
         <div>
           <ul className="mt-4">
             <div className="flex flex-row items-center mb-3">
@@ -53,7 +53,7 @@ const Approach = () => {
         </div>
       </div>
 
-      <div class="md:flex flex-row mx-5 lg:mx-28 pb-4 space-x-3 md:space-x-10  sm:hidden">
+      <div class="md:flex flex-row mx-5 lg:mx-28 pb-4 space-x-3 md:space-x-10 sm:hidden">
         <div class="basis-1/2 md:flex hideen flex flex-col">
           <img className="md:flex lg:flex hidden rounded-3xl" src={ug} alt="" />
 

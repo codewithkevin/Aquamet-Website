@@ -7,7 +7,7 @@ const Partners = () => {
   return (
     <div className="bg-[#B2E2FB]">
       <div className="flex justify-center">
-        <h2 className="font-normal leading-[24px] text-center text-[#475467] text-[20px] my-[50px] font-serif">
+        <h2 className="font-bold leading-[24px] text-center text-[#475467] text-[20px] my-[50px] font-serif">
           Our Trusted Partners
         </h2>
       </div>

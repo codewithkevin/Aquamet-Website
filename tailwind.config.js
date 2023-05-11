@@ -10,9 +10,10 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Manrope", "serif"],
-      serif: ["Poppins", "sans-serif"],
+      serif: ["Poppins"],
       lato: ["Lato", "sans-serif"],
       manrope: ["Manrope", "sans-serif"],
+      dmsans: ["DMSans", "sans-serif"],
     },
     extend: {},
   },

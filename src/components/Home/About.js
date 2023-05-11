@@ -19,25 +19,27 @@ const About = () => {
     <section className="mt-5 md:mt-20  mx-5 mb-10">
       <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2">
         <div className="md:mt-10 sm:mt-4">
-          <strong className="text-[26px] font-medium text-center font-serif">
-            Aquamet Technologies
-          </strong>
-          <div className="flow-root ... max-w-md text-gray-600 leading-[32px] mt-2 font-serif space-y-3">
-            <p>
+          <div  className="md:max-w-3xl sm:max-w-[1rem] mb-4">
+            <strong className="text-[36px]  font-semibold leading-[38px] text-center font-dmsans">
+              Aquamet Technologies
+            </strong>
+          </div>
+          <div className="flow-root ... max-w-2xl  mt-2  space-y-5">
+            <p className="font-serif text-[18px] leading-[28px] text-gray-600 font-normal">
               Aquamet is a registered company in Ghana that seeks to eradicate
               the numerous uncertainties in aquaculture production using
               technology.
             </p>
-            <p>
+            <p className="font-serif text-[18px] leading-[28px] text-gray-600 font-normal">
               Our solution comes with a smart probe for monitoring water quality
               remotely via SMS, mobile app and advisory both online(voice
               messages and interactive app) and offline.
             </p>
-            <p>
+            <p className="font-serif text-[18px] leading-[28px] text-gray-600 font-normal">
               Our primary goal is to foster aquaculture production through
               reducing high mortalities and increasing farmers’ yield.
             </p>
-            <p>
+            <p className="font-serif text-[18px] leading-[28px] text-gray-600 font-normal">
               {" "}
               An array of assistive farm management tools such as feed
               estimator, record keeping, and management tips can also be found

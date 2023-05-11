@@ -10,17 +10,17 @@ const Farmers = () => {
   }
 
   return (
-    <section className="sm:mt-5 md:mt-16 mx-5 mb-20">
+    <section className="sm:mt-10 md:mt-16 mx-5 mb-20">
       <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2">
         <div className="mt-5">
-          <strong className="text-3xl text-center">Our Farmers</strong>
-          <div className="flow-root ... max-w-md text-gray-600 leading-[30px] mt-5 space-y-10">
-            <p>
+          <strong className="text-[37px] text-center font-dmsans md:font-medium sm:font-semibold leading-[44px]">Our Farmers</strong>
+          <div className="flow-root ... max-w-2xl text-gray-600 leading-[30px] mt-5 sm:space-y-3 lg:space-y-10">
+            <p className="font-serif text-[18px] leading-[28px] text-gray-600 font-normal">
               Our fish farmers are at the heart of what we do. We farm with them
               to obtain fish hand knowledge about the pain points and address
               them with easy-to use technological tools.
             </p>
-            <p>
+            <p className="font-serif text-[18px] leading-[28px] text-gray-600 font-normal">
               We are currently working with some 500 fish farmers, mostly
               smallholder pond and cage farmers who are located in the Greater
               Accra, Kumasi and Asutuare in the Eastern region. Our key

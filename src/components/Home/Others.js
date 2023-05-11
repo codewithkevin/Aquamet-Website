@@ -4,7 +4,7 @@ const Others = () => {
   return (
     <section className="flex flex-col items-center p-10 bg-[#B2E2FB]">
       <div>
-        <h1 className="mx-auto text-center font-bold text-3xl">
+        <h1 className="mx-auto text-center font-medium text-[36px] leading-[44px] font-dmsans">
           What drives us?
         </h1>
       </div>
@@ -15,13 +15,13 @@ const Others = () => {
             <span className="bg-[#ECFBFF] p-1 rounded-full">
               <CheckRoundedIcon className="text-blue-600" fontSize="small" />
             </span>
-            <span className="ml-3">
+            <span className="ml-3 font-serif">
               We approach fish farming with precision and data driven approach.
             </span>
           </p>
         </div>
         <div>
-          <p className="font-medium flex items-center">
+          <p className="font-medium flex items-center font-serif">
             <span className="bg-[#ECFBFF] p-1 rounded-full">
               <CheckRoundedIcon className="text-blue-600" fontSize="small" />
             </span>
