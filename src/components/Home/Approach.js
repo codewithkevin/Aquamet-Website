@@ -76,7 +76,7 @@ const Approach = () => {
         </div>
 
         <div class="basis-1/2">
-          <h1 className="font-bold text-2xl">Our Approach</h1>
+          <h1 className="font-semibold text-[36px] mb-2 laeding-[44px]">Our Approach</h1>
           <div className="flex-col mt-2">
             <div className="flex flex-row items-center">
               <span className="bg-[#ECFBFF] p-1 rounded-full">

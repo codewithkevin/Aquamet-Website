@@ -8,10 +8,10 @@ const Mockup = () => {
       <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] pb-4 space-x-3 space-y-3 md:space-x-10">
         <div className="flex flex-col basis-1/2 sm:mb-20 mb-0">
           <div className="mt-0 lg::mt-14 md:mt-10">
-            <h1 className="text-2xl font-bold mb-4">
+            <h1 className="text-2xl font-semibold mb-4 font-dmsans">
               AquaStall <span className=""> - Marketplace</span>
             </h1>
-            <p className="flow-root ... max-w-md text-gray-600 leading-[32px] mb-5">
+            <p className="flow-root ... max-w-2xl text-gray-600 leading-[32px] mb-5">
               Sell your fish or other inputs by creating your stall. You can
               also buy your fresh quality farmed fish right from the farm.
               Obtain all your fish farm inputs on our stall.
