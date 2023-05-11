@@ -45,7 +45,7 @@ const Solutions = () => {
           </div>
         </div>
 
-        <div className="md:hidden sm:flex sm:justify-center w-[285px] h-[431px] mb-0 pb-0 ml-16">
+        <div className="md:hidden sm:flex sm:justify-center flex items-center justify-center w-[285px] h-[431px] mb-0 pb-0 mx-auto">
           <img src={phone2} alt="" />
         </div>
 
