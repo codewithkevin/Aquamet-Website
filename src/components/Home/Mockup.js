@@ -29,7 +29,7 @@ const Mockup = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 mt-10 rounded-xl overflow-hidden">
+        <div className="w-full md:w-1/2 mt-10 rounded-xl overflow-hidden md:pt-5">
           <div className="border-4 border-black">
             <img src={mockup} alt="aquamet" className="w-full h-auto block" />
           </div>
