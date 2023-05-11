@@ -3,27 +3,31 @@ import Avatar from "@mui/material/Avatar";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ug from "../../assests/Others/group2.png";
+import Box from "@mui/material/Box";
+import Rating from "@mui/material/Rating";
 
 const Testimonial = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [value, setValue] = useState(6);
 
   const titles = [
     {
-      title: "Great product assisting farmers to reduce high mortalities.",
+      title:
+        "Excellent service, they helped me set up my fish farm and provided training for me to produce fish with no prior experience",
       name: "Tetteh",
-      position: "CEO, Dynamo farms",
+      position: "CEO and Customer, Dynamo farms",
     },
     {
       title:
         "Excellent service, they helped me set up my fish farm and provided training for me to produce fish with no prior experience",
       name: "Abu",
-      position: "Adenta",
+      position: "Customer from Aqumate, Adenta",
     },
     {
       title:
         "They assisted me to revamp my fish farm with their services and now my farm is profitable. Will highly recommend their services",
       name: "Madam Patricia",
-      position: "Dodowa",
+      position: "ustomer from Aqumate, Dodowa",
     },
   ];
 
@@ -38,21 +42,31 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="bg-[#B2E2FB]">
-      <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] pb-16 space-x-3 space-y-3 md:space-x-10 mt-10">
+    <section className="bg-[#B2E2FB] w-full h-full">
+      <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] pb-16 space-x-3 space-y-3 md:space-x-10 mt-10 gap-6">
         <div className="basis-1/2 md:mt-[10rem]">
-          {titles.map((title, index) => (
-            <h1
-              key={index}
-              className={`${
-                activeIndex === index ? "" : "hidden"
-              } text-3xl mb-4 font-bold md:max-w-md`}
+          <div className="w-full mt-10  h-[13vh]">
+            <Box
+              sx={{
+                "& > legend": { mt: 2 },
+              }}
             >
-              {title.title}
-            </h1>
-          ))}
-          <div className="text-lg mb-4 flex flex-row items-center mt-10">
-            <div className="flex flex-col">
+              <Rating name="read-only" value={value} readOnly />
+            </Box>
+            {titles.map((title, index) => (
+              <h1
+                key={index}
+                className={`${
+                  activeIndex === index ? "" : "hidden"
+                } text-2xl mb-4 md:max-w-3xl font-serif font-semibold leading-[37px]`}
+              >
+                {title.title}
+              </h1>
+            ))}
+          </div>
+
+          <div className="text-lg mb-4 flex md:flex-row sm:flex-col md:items-center sm:mt-[4.5rem] md:mt-16">
+            <div className="flex flex-col w-full">
               <div className="flex flex-row items-center">
                 <Avatar alt="Remy Sharp" src="" />
                 <h6 className="ml-2">
@@ -65,7 +79,7 @@ const Testimonial = () => {
               </div>
             </div>
 
-            <div className="flex justify-between space-x-10 ml-7">
+            <div className="flex  md:justify-between space-x-10 md:ml-7 sm:mt-4">
               <button
                 className="text-black  bg-white border-2 rounded-full px-4 py-3"
                 onClick={handlePrevClick}
