@@ -32,7 +32,7 @@ const Newsletter = () => {
             >
               <TextField
                 id="standard-basic"
-                label="Standard"
+                label="Email Address"
                 variant="standard"
               />
             </Box>
