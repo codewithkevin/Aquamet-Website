@@ -28,14 +28,17 @@ const Newsletter = () => {
               }}
               noValidate
               autoComplete="on"
+              bgcolor="white"
             >
               <TextField
-                id="outlined-basic"
-                label="Enter your email"
-                variant="outlined"
+                id="standard-basic"
+                label="Standard"
+                variant="standard"
               />
             </Box>
-            <p className="ml-3">We care about your data in our privacy policy.</p>
+            <p className="ml-3">
+              We care about your data in our privacy policy.
+            </p>
           </div>
 
           <Button

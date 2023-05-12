@@ -8,12 +8,11 @@ import Newsletter from "../components/Home/Newsletter";
 import PhonePicker from "../components/Essentials/PhonePicker";
 
 const Contact = () => {
-
   return (
-    <div className="w-full h-full mt-20 space-y-10">
+    <div className="w-full h-full space-y-10">
       <section className="flex flex-col justify-center items-center space-y-10 pb-20">
-        <div className="mb-7  lg:mb-14">
-          <h1 className="text-[#146A96] font-serif font-normal text-[16px] leading-[24px] text-center">
+        <div className="mb-7 bg-[#B2E2FB] w-full max-auto lg:mb-14 p-10">
+          <h1 className="text-[#146A96] font-serif font-bold text-[16px] leading-[24px] text-center mt-20">
             Contact Us
           </h1>
 
@@ -22,8 +21,8 @@ const Contact = () => {
               We’d love to hear from you
             </h1>
 
-            <div className="mx-0 mt-5 space-y-4 max-w-auto sm:mx-5  sm:flex sm:flex-col sm:items-center md:text-justify md:max-w-lg lg:max-w-lg">
-              <p className="">Our friendly team is always here to chat.</p>
+            <div className="mt-5">
+              <p className="text-center">Our friendly team is always here to chat.</p>
             </div>
           </div>
         </div>

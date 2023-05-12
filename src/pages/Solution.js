@@ -7,8 +7,8 @@ import Newsletter from "../components/Home/Newsletter";
 const Solution = () => {
   return (
     <section className="w-full h-full ">
-      <section className="flex flex-col justify-center items-center sm:space-y-10  md:space-y-14 pb-20">
-        <div className="space-y-10 bg-[#B2E2FB] w-full p-10">
+      <section className="flex flex-col justify-cebnter items-center sm:space-y-10  md:space-y-14 pb-20">
+        <div className="space-y-10 g-[#B2E2FB] w-full p-10">
           <h1 className="text-[#146A96] font-serif font-bold text-[16px] leading-[24px] text-center mt-20">
             Our Solution
           </h1>
