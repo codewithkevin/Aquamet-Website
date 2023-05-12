@@ -14,7 +14,7 @@ const Hero = () => {
     height: "100vh",
     color: "#fff",
     lineHeight: "160px",
-    backgroundImage: `url(${slide1})`,
+    backgroundImage: `url(${slide3})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundColor: "rgba(0, 0, 0, 0.9)", // Adjust opacity as needed
@@ -33,7 +33,7 @@ const Hero = () => {
     height: "100vh",
     color: "#fff",
     lineHeight: "160px",
-    backgroundImage: `url(${slide3})`,
+    backgroundImage: `url(${slide1})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
   };
