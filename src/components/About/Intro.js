@@ -1,6 +1,5 @@
 import group from "../../assests/About/Aboutgroup.png";
 import group2 from "../../assests/About/vision.png";
-import { Button } from "antd";
 
 const Intro = () => {
   return (

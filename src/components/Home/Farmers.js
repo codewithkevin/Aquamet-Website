@@ -2,18 +2,13 @@ import ug from "../../assests/Others/group1.png";
 import { useNavigate } from "react-router-dom";
 
 const Farmers = () => {
-  const navigate = useNavigate();
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    navigate("/about");
-  }
-
   return (
     <section className="sm:mt-10 md:mt-16 mx-5 mb-20">
       <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2">
         <div className="mt-5">
-          <strong className="text-[37px] text-center font-dmsans md:font-medium sm:font-semibold leading-[44px]">Our Farmers</strong>
+          <strong className="text-[37px] text-center font-dmsans md:font-medium sm:font-semibold leading-[44px]">
+            Our Farmers
+          </strong>
           <div className="flow-root ... max-w-2xl text-gray-600 leading-[30px] mt-5 sm:space-y-3 lg:space-y-10">
             <p className="font-serif text-[18px] leading-[28px] text-gray-600 font-normal">
               Our fish farmers are at the heart of what we do. We farm with them
