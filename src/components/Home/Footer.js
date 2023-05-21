@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../../assests/logo2.png";
 import { Link } from "react-router-dom";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
   return (
@@ -52,10 +54,21 @@ const Footer = () => {
 
         <div className="border-t border-gray-400"></div>
 
-        <div>
-          <p className="text-white">
-            © 2023, Aquamet Technologies Limited. All rights reserved.
-          </p>
+        <div className="flex flex-row justify-between">
+          <div>
+            <p className="text-white">
+              © 2023, Aquamet Technologies Limited. All rights reserved.
+            </p>
+          </div>
+
+          <div className="flex flex-row space-x-3">
+            <div>
+              <LinkedInIcon className="text-white" />
+            </div>
+            <div>
+              <FacebookIcon className="text-white" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
