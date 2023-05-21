@@ -44,8 +44,8 @@ const Testimonial = () => {
   return (
     <section className="bg-[#B2E2FB] w-full h-full">
       <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] pb-16 space-x-3 space-y-3 md:space-x-10 mt-10 gap-6">
-        <div className="basis-1/2 md:mt-[10rem]">
-          <div className="w-full mt-10">
+        <div className="basis-1/2 md:mt-[5rem]">
+          <div className="w-full mt-10  md:h-[20vh] sm:h-[25vh]">
             <Box
               sx={{
                 "& > legend": { mt: 2 },
