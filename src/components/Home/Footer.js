@@ -62,12 +62,16 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-row space-x-3">
-            <div className="cursor-pointer">
-              <LinkedInIcon className="text-white" />
-            </div>
-            <div className="cursor-pointer">
-              <FacebookIcon className="text-white" />
-            </div>
+            <Link to="https://www.linkedin.com/company/aquamet-technologies/">
+              <div className="cursor-pointer">
+                <LinkedInIcon className="text-white" />
+              </div>
+            </Link>
+            <Link to="https://www.facebook.com/profile.php?id=100089181529106&mibextid=LQQJ4d">
+              <div className="cursor-pointer">
+                <FacebookIcon className="text-white" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
