@@ -6,7 +6,6 @@ import slide3 from "../../assests/Hero/slide3.png";
 import slide4 from "../../assests/Hero/slide4.png";
 import * as React from "react";
 
-import PhonePicker from "../Essentials/PhonePicker";
 import DemoPopup from "../Essentials/DemoPopup";
 
 const Hero = () => {
@@ -61,7 +60,6 @@ const Hero = () => {
     <div loading="lazy" className="relative h-[100vh] w-full justify-center">
       <Carousel autoplay>
         <div>
-
           <div style={slideOne}>
             <div className="relative top-1/4 left-4 lg:left-28 w-full flex flex-col">
               <div className="max-w-[22rem] sm:max-w-[22rem] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mb-10">
@@ -93,7 +91,6 @@ const Hero = () => {
                   </span>
                   <span className="text-[#146A96]">Demo</span>
                 </Button>
-                <DemoPopup open={open} handleClose={handleClose} />
               </div>
             </div>
           </div>
@@ -131,7 +128,6 @@ const Hero = () => {
                   </span>
                   <span className="text-[#146A96]">Demo</span>
                 </Button>
-                <DemoPopup open={open} handleClose={handleClose} />
               </div>
             </div>
           </div>
@@ -169,7 +165,6 @@ const Hero = () => {
                   </span>
                   <span className="text-[#146A96]">Demo</span>
                 </Button>
-                <DemoPopup open={open} handleClose={handleClose} />
               </div>
             </div>
           </div>
@@ -207,12 +202,13 @@ const Hero = () => {
                   </span>
                   <span className="text-[#146A96]">Demo</span>
                 </Button>
-                <DemoPopup open={open} handleClose={handleClose} />
               </div>
             </div>
           </div>
         </div>
       </Carousel>
+
+      <DemoPopup open={open} handleClose={handleClose} />
     </div>
   );
 };
