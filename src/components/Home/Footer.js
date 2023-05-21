@@ -38,9 +38,15 @@ const Footer = () => {
               </li>
             </Link>
 
-            <li className="text-white">Terms</li>
-            <li className="text-white sm:inline-block sm:text-left">Privacy</li>
-          
+            <Link to="/terms">
+              <li className="text-white">Terms</li>
+            </Link>
+
+            <Link to="/terms">
+              <li className="text-white sm:inline-block sm:text-left">
+                Privacy
+              </li>
+            </Link>
           </ul>
         </div>
 
