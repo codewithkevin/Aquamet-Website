@@ -1,6 +1,5 @@
 import ug from "../../assests/Others/group1.png";
-import { useNavigate } from "react-router-dom";
-
+ 
 const Farmers = () => {
   return (
     <section className="sm:mt-10 md:mt-16 mx-5 mb-20">

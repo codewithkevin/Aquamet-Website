@@ -27,7 +27,7 @@ const Partners = () => {
           <img src={absa} alt="" />
         </div>
 
-        <div className="sm:col-span-1 lg:col-auto p-4 lg:mb-20">
+        <div className="sm:col-span-1 lg:col-auto  lg:mb-20 border-2 rounded-lg border-gray-500">
           <img src={partner} alt="" />
         </div>
       </div>
