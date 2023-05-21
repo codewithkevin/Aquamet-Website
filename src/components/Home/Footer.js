@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../assests/logo2.png";
 import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
   return (
@@ -62,10 +62,10 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-row space-x-3">
-            <div>
+            <div className="cursor-pointer">
               <LinkedInIcon className="text-white" />
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FacebookIcon className="text-white" />
             </div>
           </div>
