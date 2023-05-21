@@ -208,7 +208,14 @@ const Hero = () => {
         </div>
       </Carousel>
 
-      <DemoPopup open={open} handleClose={handleClose} />
+      <div className="relative">
+        {open && (
+          <div className="fixed inset-0 bg-opacity-50 backdrop-filter backdrop-blur-lg"></div>
+        )}
+        <div className="relative z-10">
+          <DemoPopup open={open} handleClose={handleClose} />
+        </div>
+      </div>
     </div>
   );
 };
