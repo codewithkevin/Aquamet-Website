@@ -6,7 +6,7 @@ import slide3 from "../../assests/Hero/slide3.png";
 import slide4 from "../../assests/Hero/slide4.png";
 import * as React from "react";
 
-import DemoPopup from "../Essentials/DemoPopup";
+import DemoPopup from '../Essentials/PopUp/DemoPopup';
 
 const Hero = () => {
   const slideOne = {

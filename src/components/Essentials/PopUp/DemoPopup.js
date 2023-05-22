@@ -1,12 +1,12 @@
 import * as React from "react";
-import logo from "../../assests/logo2.png";
+import logo from '../../../assests/logo2.png';
 import CloseIcon from "@mui/icons-material/Close";
 import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
-import PhonePicker from "./PhonePicker";
 import Button from "@mui/material/Button";
+import PhonePicker from '../PhonePicker';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
