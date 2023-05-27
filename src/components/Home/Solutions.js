@@ -1,6 +1,7 @@
 import React from "react";
 import phone from "../../assests/Others/phone1.png";
 import phone2 from "../../assests/Others/phone2.png";
+import { Link } from 'react-router-dom';
 
 const Solutions = () => {
   return (
@@ -19,20 +20,20 @@ const Solutions = () => {
 
           <div className="flex flex-row items-center">
             <button>
-              <a
-                href="https://apps.apple.com/us/app/my-app/id1234567890"
+              <Link
+                to="https://apps.apple.com/us/app/my-app/id1234567890"
                 target="_blank"
               >
                 <img
                   src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                   alt="Download on the App Store"
                 />
-              </a>
+              </Link>
             </button>
 
             <button>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.myapp"
+              <Link
+                to="https://play.google.com/store/apps/details?id=com.myapp"
                 target="_blank"
               >
                 <img
@@ -40,7 +41,7 @@ const Solutions = () => {
                   alt="Get it on Google Play"
                   class="h-14"
                 />
-              </a>
+              </Link>
             </button>
           </div>
         </div>

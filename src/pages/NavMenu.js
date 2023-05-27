@@ -6,7 +6,7 @@ const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap lg:px-[130px] px-6 py-2 bottom-1 border">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between flex-wrap lg:px-[130px] px-6 py-2 bg-white shadow">
       <Link to="/">
         <div className="flex flex-row items-center flex-shrink-0 text-white mr-6 lg:mr-72">
           <img src={logo} className="top-2 w-20  h-18" alt="Logo" />
