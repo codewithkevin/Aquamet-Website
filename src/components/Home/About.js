@@ -1,23 +1,12 @@
 import ug from "../../assests/Others/Person1.png";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import AOS from "../Essentials/AOSInitializer";
 
 const About = () => {
-  const navigate = useNavigate();
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    navigate("/solution");
-  }
-
-  function contactSubmit(e) {
-    e.preventDefault();
-    navigate("/contact");
-  }
-
   return (
     <section className="mt-5 md:mt-20  mx-5 mb-10">
       <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2">
-        <div className="md:mt-10 sm:mt-4">
+        <div data-aos="fade-up-left" className="md:mt-10 sm:mt-4">
           <div className="md:max-w-3xl sm:max-w-[1rem] mb-4">
             <strong className="text-[36px]  font-semibold leading-[38px] text-center font-dmsans">
               Aquamet Technologies
@@ -46,24 +35,30 @@ const About = () => {
           </div>
 
           <div className="mt-5 flex md:flex-row sm:flex-col  justify-start md:space-x-5 sm:space-y-5 md:space-y-0">
-            <button
-              onClick={contactSubmit}
-              className="bg-[#ffffff] hover:bg-blue-900 hover:text-white text-black  top-0 rounded-lg  px-5 py-2 border-2"
-              type="button"
-            >
-              Get in touch
-            </button>
-            <button
-              onClick={handleSubmit}
-              className="bg-[#146A96] hover:bg-blue-900 text-white  top-0 rounded-lg  px-5 py-2"
-              type="button"
-            >
-              Our Solution
-            </button>
+            <Link to="/contact">
+              <button
+                className="bg-[#ffffff] hover:bg-blue-900 hover:text-white text-black  top-0 rounded-lg  px-5 py-2 border-2"
+                type="button"
+              >
+                Get in touch
+              </button>
+            </Link>
+            <Link to="/solution">
+              <button
+                className="bg-[#146A96] hover:bg-blue-900 text-white  top-0 rounded-lg  px-5 py-2"
+                type="button"
+              >
+                Our Solution
+              </button>
+            </Link>
           </div>
         </div>
 
-        <div loading="lazy" className="mb-10 mt-0 sm:mt-5 lg:mt-0 md:mt-[8rem]">
+        <div
+          data-aos="fade-up-right"
+          loading="lazy"
+          className="mb-10 mt-0 sm:mt-5 lg:mt-0 md:mt-[8rem]"
+        >
           <img
             className="md:flex lg:flex  md:mt-2 lg:mt-0 rounded-3xl"
             src={ug}

@@ -1,8 +1,14 @@
 import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
+import AOS from "../Essentials/AOSInitializer";
 
 const Others = () => {
   return (
-    <section className="flex flex-col items-center p-10 bg-[#B2E2FB]">
+    <section
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      className="flex flex-col items-center p-10 bg-[#B2E2FB]"
+    >
       <div>
         <h1 className="mx-auto text-center font-medium text-[36px] leading-[44px] font-dmsans">
           What drives us?

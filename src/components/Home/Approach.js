@@ -5,8 +5,13 @@ import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 const Approach = () => {
   return (
     <section loading="lazy" className="pb-10">
-      <div className="hidden sm:flex md:hidden lg:hidden flex-col mx-5 ">
-        <h1 className="font-semibold text-[36px] text-center font-serif">Our Approach</h1>
+      <div
+        data-aos="fade-up"
+        className="hidden sm:flex md:hidden lg:hidden flex-col mx-5 "
+      >
+        <h1 className="font-semibold text-[36px] text-center font-serif">
+          Our Approach
+        </h1>
         <div>
           <ul className="mt-4">
             <div className="flex flex-row items-center mb-3">
@@ -24,7 +29,7 @@ const Approach = () => {
             </div>
 
             <div className="flex flex-row items-center mb-3">
-            <span className="bg-[#ECFBFF] p-1 rounded-full">
+              <span className="bg-[#ECFBFF] p-1 rounded-full">
                 <CheckRoundedIcon className="text-blue-600" fontSize="small" />
               </span>
               <h1 className="text-lg font-bold ml-2">Low Cost</h1>
@@ -49,11 +54,18 @@ const Approach = () => {
         </div>
 
         <div className="flex mt-3">
-          <img className="md:hidden lg:hidden flex rounded-3xl" src={ug} alt="" />
+          <img
+            className="md:hidden lg:hidden flex rounded-3xl"
+            src={ug}
+            alt=""
+          />
         </div>
       </div>
 
-      <div class="md:flex flex-row mx-5 lg:mx-28 pb-4 space-x-3 md:space-x-10 sm:hidden">
+      <div
+        data-aos="fade-down"
+        class="md:flex flex-row mx-5 lg:mx-28 pb-4 space-x-3 md:space-x-10 sm:hidden"
+      >
         <div class="basis-1/2 md:flex hideen flex flex-col">
           <img className="md:flex lg:flex hidden rounded-3xl" src={ug} alt="" />
 
@@ -76,7 +88,9 @@ const Approach = () => {
         </div>
 
         <div class="basis-1/2">
-          <h1 className="font-semibold text-[36px] mb-2 laeding-[44px]">Our Approach</h1>
+          <h1 className="font-semibold text-[36px] mb-2 laeding-[44px]">
+            Our Approach
+          </h1>
           <div className="flex-col mt-2">
             <div className="flex flex-row items-center">
               <span className="bg-[#ECFBFF] p-1 rounded-full">
@@ -89,7 +103,8 @@ const Approach = () => {
               to remotely monitor water quality via SMS, mobile app, and
               advisory. This means farmers can quickly and easily access
               important information about their aquaculture operations without
-              having to physically check on their farms.
+              import AOS from '../Essentials/AOSInitializer'; having to
+              physically check on their farms.
             </p>
           </div>
 
