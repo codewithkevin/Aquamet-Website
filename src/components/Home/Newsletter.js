@@ -4,7 +4,7 @@ import { Button } from "antd";
 
 const Newsletter = () => {
   return (
-    <section className="bg-[#B2E2FB] w-full h-full">
+    <section data-aos="zoom-in-down" className="bg-[#B2E2FB] w-full h-full">
       <div className="flex flex-col items-center justify-center mx-5 pb-10">
         <h1 className="mx-auto text-center font-semibold text-[30px] leading-[38px] mt-14 font-serif">
           Sign up for our newsletter

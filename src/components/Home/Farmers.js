@@ -7,7 +7,7 @@ const Farmers = () => {
         <div
           data-aos="fade-left"
           data-aos-easing="linear"
-          data-aos-duration="1000"
+          data-aos-duration="100"
           className="mt-5"
         >
           <strong className="text-[37px] text-center font-dmsans md:font-medium sm:font-semibold leading-[44px]">

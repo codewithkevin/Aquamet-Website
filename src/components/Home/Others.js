@@ -6,7 +6,7 @@ const Others = () => {
     <section
       data-aos="fade-down"
       data-aos-easing="linear"
-      data-aos-duration="1500"
+      data-aos-duration="100"
       className="flex flex-col items-center p-10 bg-[#B2E2FB]"
     >
       <div>
