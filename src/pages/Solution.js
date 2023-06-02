@@ -12,7 +12,12 @@ const Solution = () => {
           <h1 className="text-[#146A96] font-serif font-bold text-[16px] leading-[24px] text-center mt-20">
             Our Solution
           </h1>
-          <div class="md:max-w-6xl  mx-auto">
+          <div
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="200"
+            class="md:max-w-6xl  mx-auto"
+          >
             <h1 className="font-serif font-bold md:text-[36px] sm:text-[28px] md:leading-[44px] sm:leading-[31px] text-center">
               We have the best solution to your needs
             </h1>
@@ -30,12 +35,22 @@ const Solution = () => {
             </div>
           </div>
 
-          <div className="mt-5 flex justify-center text-center">
+          <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="200"
+            className="mt-5 flex justify-center text-center"
+          >
             <img src={solution1} alt="" />
           </div>
         </div>
 
-        <div className="space-y-10 p-10">
+        <div
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="700"
+          className="space-y-10 p-10"
+        >
           <div class="md:max-w-5xl  mx-auto mb-[10rem]">
             <h1 className="ffont-serif font-bold md:text-[36px] sm:text-[28px] md:leading-[44px] sm:leading-[31px] text-center">
               Continuous real-time monitoring of water quality anywhere
