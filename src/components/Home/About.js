@@ -1,6 +1,5 @@
 import ug from "../../assests/Others/Person1.png";
 import { Link } from "react-router-dom";
-import AOS from "../Essentials/AOSInitializer";
 
 const About = () => {
   return (

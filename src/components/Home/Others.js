@@ -1,5 +1,4 @@
 import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
-import AOS from "../Essentials/AOSInitializer";
 
 const Others = () => {
   return (

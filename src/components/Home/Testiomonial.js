@@ -97,7 +97,7 @@ const Testimonial = () => {
         </div>
 
         <div data-aos="fade-left" className="basis-1/2   lg:mr-40">
-          <img className="" src={ug} alt="" className="w-full h-full" />
+          <img src={ug} alt="" className="w-full h-full" />
         </div>
       </div>
     </section>

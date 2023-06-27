@@ -2,7 +2,6 @@ import React from "react";
 import ug from "../../assests/Partners/ug.png";
 import absa from "../../assests/Partners/absa.png";
 import partner from "../../assests/Partners/partner.png";
-import AOS from "../Essentials/AOSInitializer";
 
 const Partners = () => {
   return (
