@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useSignUp } from "../function/auth/useSignUp";
 
 const SignUp = () => {
+  const [name, setName] = useState(""); // Add name state variable
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const { signup, isLoading, error } = useSignUp();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
+    signup(email, password, name);
   };
 
   return (
@@ -38,16 +42,17 @@ const SignUp = () => {
                   Name
                 </label>
                 <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  type="text" // Use the appropriate input type for the name field
+                  name="name"
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="bg-gray-50 border border-gray-300 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 text-black dark:placeholder-gray-400"
-                  placeholder="name@company.com"
+                  placeholder="Your Name"
                   required
                 />
               </div>
+
               <div>
                 <label
                   htmlFor="email"
@@ -66,6 +71,7 @@ const SignUp = () => {
                   required
                 />
               </div>
+
               <div>
                 <label
                   htmlFor="email"
@@ -84,6 +90,7 @@ const SignUp = () => {
                   required
                 />
               </div>
+              
               <div>
                 <label
                   htmlFor="password"
@@ -109,8 +116,11 @@ const SignUp = () => {
                 type="submit"
                 className="w-full text-white bg-blue-400 focus:outline-none focus:ring-primary-300 font-bold rounded-lg text-md px-5 py-2.5 text-center "
               >
-                Sign Up
+                {isLoading ? "Loading....." : "Sign Up"}
               </button>
+
+              {error && <p className="text-red-500">{error}</p>}
+
               <p className="text-sm font-light text-gray-500 dark:text-gray-400 items-center text-center pt-5">
                 Already have an account?{" "}
                 <span className="font-medium text-primary-600 hover:underline cursor-pointer dark:text-primary-500">

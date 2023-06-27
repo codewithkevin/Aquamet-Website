@@ -1,28 +1,26 @@
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { useState } from "react";
-import axios from "axios";
 
 export const useSignUp = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const { dispatch } = useAuthContext();
-  const [userEmail, setUserEmail] = useState("");
 
   const signup = async (email, password, name) => {
     setIsLoading(true);
     setError("");
 
     try {
-      const response = await axios.post("/api/user/account/signup", {
-        email,
-        password,
-        name,
+      const response = await fetch("/api/user/account/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password, name }),
       });
 
-      const responseData = response.data;
+      const responseData = await response.json();
 
       if (!response.ok) {
-        setError(responseData.error);
+        setError(responseData.message);
       } else {
         // save the user to local storage
         localStorage.setItem("user", JSON.stringify(responseData));
@@ -32,9 +30,6 @@ export const useSignUp = () => {
 
         // update loading state
         setIsLoading(false);
-
-        // set user email
-        setUserEmail(responseData.email);
       }
     } catch (error) {
       setError("An error occurred during sign-up.");
@@ -43,5 +38,5 @@ export const useSignUp = () => {
     }
   };
 
-  return { signup, isLoading, error, userEmail };
+  return { signup, isLoading, error };
 };
