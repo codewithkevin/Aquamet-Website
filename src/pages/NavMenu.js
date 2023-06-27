@@ -75,7 +75,11 @@ const NavMenu = () => {
 
         <div className="flex flex-row items-center">
           <div>
-            <h1 className="text-[16px] text-[#475467]  font-medium">Log In</h1>
+            <Link to="/login">
+              <h1 className="text-[16px] text-[#475467]  font-medium">
+                Log In
+              </h1>
+            </Link>
           </div>
           <div className="ml-5">
             <button className="inline-flex items-center bg-[#146A96] border-0 py-2 px-4 text-white rounded-lg">
