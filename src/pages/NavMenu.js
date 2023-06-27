@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useLogout } from "../function/auth/useLogout";
 import { GetUserDetails } from "../function/auth/getDetails";
+import Avatar from "@mui/material/Avatar";
+import { deepOrange } from "@mui/material/colors";
 
 const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +16,8 @@ const NavMenu = () => {
     logout();
   };
 
-  const { userData, token } = GetUserDetails();
+  const { userData } = GetUserDetails();
 
-  console.log("Tokens:", token);
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between flex-wrap lg:px-[130px] px-6 py-2 bg-white shadow">
       <Link to="/">
@@ -85,12 +86,40 @@ const NavMenu = () => {
           </Link>
         </div>
 
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center sm:space-x-3 sm:pt-5">
+          <div className="">
+            {user ? (
+              <div className="flex flex-row items-center space-x-3">
+                <Avatar
+                  sx={{
+                    bgcolor: deepOrange[500],
+                    width: 32,
+                    height: 32,
+                    fontSize: 16,
+                  }}
+                  alt="Remy Sharp"
+                  src="/broken-image.jpg"
+                >
+                  {userData ? userData.charAt(0) : ""}
+                </Avatar>
+                <h1 className="font-bold text-lg">{userData}</h1>
+              </div>
+            ) : (
+              <button className="inline-flex items-center bg-[#146A96] border-0 py-2 px-4 text-white rounded-lg">
+                <h5 className="font-normal">Visit AquaStall</h5>
+              </button>
+            )}
+          </div>
           <div>
             <h1 className="text-[16px] text-[#475467]  font-medium">
               {user ? (
                 <div>
-                  <button onClick={handleLogout}>Log Out</button>
+                  <button
+                    className="inline-flex items-center bg-[#146A96] border-0 py-2 px-2 text-white rounded-lg"
+                    onClick={handleLogout}
+                  >
+                    <span className="font-medium">Log Out</span>
+                  </button>
                 </div>
               ) : (
                 <div>
@@ -98,11 +127,6 @@ const NavMenu = () => {
                 </div>
               )}
             </h1>
-          </div>
-          <div className="ml-5">
-            <button className="inline-flex items-center bg-[#146A96] border-0 py-2 px-4 text-white rounded-lg">
-              <h5 className="font-normal">Visit AquaStall</h5>
-            </button>
           </div>
         </div>
       </div>

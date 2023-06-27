@@ -5,7 +5,6 @@ export const GetUserDetails = () => {
   const [userData, setUserData] = useState("");
 
   useEffect(() => {
-    // Retrieve the token from localStorage or wherever it is stored
     const storedUser = localStorage.getItem("user");
     const parsedUser = JSON.parse(storedUser);
     const userToken = parsedUser ? parsedUser.token : null;
@@ -14,7 +13,7 @@ export const GetUserDetails = () => {
 
   useEffect(() => {
     if (token) {
-      fetchUserData(token); // Call the function with the token
+      fetchUserData(token);
     }
   }, [token]);
 
@@ -29,9 +28,9 @@ export const GetUserDetails = () => {
 
       if (response.ok) {
         const userData = await response.json();
-        // Do something with the user data
-        console.log(userData);
-        setUserData(userData);
+        const { name } = userData; // Extract the name property from the userData object
+        setUserData(name);
+        console.log("Response is Okay");
       } else {
         console.error(
           "An error occurred while fetching user data.",
