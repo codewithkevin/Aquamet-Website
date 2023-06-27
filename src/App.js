@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
+import { useAuthContext } from "./hooks/useAuthContext";
 
 import NavMenu from "./pages/NavMenu";
 import Footer from "./components/Home/Footer";
@@ -14,7 +15,8 @@ const Login = lazy(() => import("./pages/Login"));
 const SignUp = lazy(() => import("./pages/SignUp"));
 
 const App = () => {
-  const user = false;
+  const { user } = useAuthContext();
+
   return (
     <div>
       <NavMenu />

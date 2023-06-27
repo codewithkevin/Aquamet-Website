@@ -1,10 +1,17 @@
 import { useState } from "react";
 import logo from "../assests/logo512.png";
 import { Link } from "react-router-dom";
+import { useAuthContext } from "../hooks/useAuthContext";
+import { useLogout } from "../function/auth/useLogout";
 
 const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { user } = useAuthContext();
+  const { logout } = useLogout();
 
+  const handleLogout = () => {
+    logout();
+  };
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between flex-wrap lg:px-[130px] px-6 py-2 bg-white shadow">
       <Link to="/">
@@ -75,11 +82,17 @@ const NavMenu = () => {
 
         <div className="flex flex-row items-center">
           <div>
-            <Link to="/login">
-              <h1 className="text-[16px] text-[#475467]  font-medium">
-                Log In
-              </h1>
-            </Link>
+            <h1 className="text-[16px] text-[#475467]  font-medium">
+              {user ? (
+                <div>
+                  <button onClick={handleLogout}>Log Out</button>
+                </div>
+              ) : (
+                <div>
+                  <Link to="/login">Login</Link>
+                </div>
+              )}
+            </h1>
           </div>
           <div className="ml-5">
             <button className="inline-flex items-center bg-[#146A96] border-0 py-2 px-4 text-white rounded-lg">

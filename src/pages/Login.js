@@ -1,14 +1,24 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLogin } from "../function/auth/useLogin";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
 
-  const handleSubmit = (e) => {
+  const { login, isLoading, error } = useLogin();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
+
+    try {
+      await login(email, password);
+    } catch (error) {
+      toast.error("Login failed.");
+    }
   };
 
   return (
@@ -95,10 +105,12 @@ const Login = () => {
               </div>
               <button
                 type="submit"
-                className="w-full text-white bg-blue-400 focus:outline-none focus:ring-primary-300 font-bold rounded-lg text-md px-5 py-2.5 text-center "
+                className="w-full text-white bg-blue-400 focus:outline-none focus:ring-primary-300 font-bold rounded-lg text-md px-5 py-2.5 text-center"
+                disabled={isLoading}
               >
-                Sign in
+                {isLoading ? "Signing in..." : "Sign in"}
               </button>
+              {error && <p className="text-red-500">{error}</p>}
               <p className="text-sm font-light text-gray-500 dark:text-gray-400 items-center text-center pt-5">
                 Don’t have an account yet?{" "}
                 <span className="font-medium text-primary-600 hover:underline cursor-pointer dark:text-primary-500">
