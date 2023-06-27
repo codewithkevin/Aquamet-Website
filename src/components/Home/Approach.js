@@ -64,9 +64,9 @@ const Approach = () => {
 
       <div
         data-aos="fade-down"
-        class="md:flex flex-row mx-5 lg:mx-28 pb-4 space-x-3 md:space-x-10 sm:hidden"
+        className="md:flex flex-row mx-5 lg:mx-28 pb-4 space-x-3 md:space-x-10 sm:hidden"
       >
-        <div class="basis-1/2 md:flex hideen flex flex-col">
+        <div className="basis-1/2 md:flex hideen flex flex-col">
           <img className="md:flex lg:flex hidden rounded-3xl" src={ug} alt="" />
 
           <div className="flex-col mt-5">
@@ -87,7 +87,7 @@ const Approach = () => {
           </div>
         </div>
 
-        <div class="basis-1/2">
+        <div className="basis-1/2">
           <h1 className="font-semibold text-[36px] mb-2 laeding-[44px]">
             Our Approach
           </h1>

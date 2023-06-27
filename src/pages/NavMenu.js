@@ -3,6 +3,7 @@ import logo from "../assests/logo512.png";
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useLogout } from "../function/auth/useLogout";
+import { GetUserDetails } from "../function/auth/getDetails";
 
 const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,10 @@ const NavMenu = () => {
   const handleLogout = () => {
     logout();
   };
+
+  const { userData, token } = GetUserDetails();
+
+  console.log("Tokens:", token);
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between flex-wrap lg:px-[130px] px-6 py-2 bg-white shadow">
       <Link to="/">

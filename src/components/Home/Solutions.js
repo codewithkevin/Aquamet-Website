@@ -42,7 +42,7 @@ const Solutions = () => {
                 <img
                   src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                   alt="Get it on Google Play"
-                  class="h-14"
+                  className="h-14"
                 />
               </Link>
             </button>
