@@ -67,9 +67,9 @@ const Hero = () => {
                   Reduce high mortalities and obtain 35% more fish at harvest
                   with our predictive management tools
                 </h1>
-                <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
+                {/* <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
                   Empowering Aquaculture Production Through Technology.
-                </p>
+                </p> */}
               </div>
 
               <div className="btnHolder space-x-5 flex flex-row top-10">
@@ -104,9 +104,9 @@ const Hero = () => {
                   Revolutionizing Aquaculture with Smart Water Monitoring and
                   Farm Management Tools.
                 </h1>
-                <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
+                {/* <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
                   Empowering Aquaculture Production Through Technology.
-                </p>
+                </p> */}
               </div>
 
               <div className="btnHolder space-x-5 flex flex-row top-10">
@@ -141,9 +141,9 @@ const Hero = () => {
                   AquaStall: Buy/sell fish farm inputs and high-quality fish
                   from 500+ farmers.
                 </h1>
-                <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
+                {/* <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
                   Empowering Aquaculture Production Through Technology.
-                </p>
+                </p> */}
               </div>
 
               <div className="btnHolder space-x-5 flex flex-row top-10">
@@ -178,9 +178,9 @@ const Hero = () => {
                   Get expert advice and tools to improve your fish farm
                   production and harvest.
                 </h1>
-                <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
+                {/* <p className="text-white mt-5 font-manrope font-normal text-[20px] md:leading-[72px]">
                   Empowering Aquaculture Production Through Technology.
-                </p>
+                </p> */}
               </div>
 
               <div className="btnHolder space-x-5 flex flex-row top-10">
