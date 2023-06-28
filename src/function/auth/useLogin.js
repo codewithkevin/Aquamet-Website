@@ -1,5 +1,6 @@
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export const useLogin = () => {
   const [error, setError] = useState("");
@@ -21,6 +22,7 @@ export const useLogin = () => {
 
       if (!response.ok) {
         setError(json.message);
+        toast.error(json.message);
       } else {
         // save the user to local storage
         localStorage.setItem("user", JSON.stringify(json));
@@ -30,6 +32,17 @@ export const useLogin = () => {
 
         // update loading state
         setIsLoading(false);
+
+        toast.success("Welcome Back", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
       }
     } catch (error) {
       setError("An error occurred during login.");
