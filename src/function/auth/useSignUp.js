@@ -12,11 +12,14 @@ export const useSignUp = () => {
     setError("");
 
     try {
-      const response = await axios.post("/api/user/account/signup", {
-        email,
-        password,
-        name,
-      });
+      const response = await axios.post(
+        "https://aquamet.onrender.com/api/user/account/signup",
+        {
+          email,
+          password,
+          name,
+        }
+      );
 
       const responseData = response.data;
 

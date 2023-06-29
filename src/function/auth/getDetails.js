@@ -20,11 +20,14 @@ export const GetUserDetails = () => {
 
   const fetchUserData = async (token) => {
     try {
-      const response = await axios.get("/api/user/account/me", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await axios.get(
+        "https://aquamet.onrender.com/api/user/account/me",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
       if (response.status === 200) {
         const userData = response.data;

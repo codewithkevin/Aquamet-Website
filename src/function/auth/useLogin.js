@@ -13,10 +13,13 @@ export const useLogin = () => {
     setError("");
 
     try {
-      const response = await axios.post("/api/user/account/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://aquamet.onrender.com/api/user/account/login",
+        {
+          email,
+          password,
+        }
+      );
 
       const responseData = response.data;
 
