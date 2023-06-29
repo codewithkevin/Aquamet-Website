@@ -6,6 +6,7 @@ const SignUp = () => {
   const [name, setName] = useState(""); // Add name state variable
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
 
   const { signup, isLoading, error } = useSignUp();
 
@@ -80,17 +81,17 @@ const SignUp = () => {
                   Phone Number
                 </label>
                 <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  type="tel"
+                  name="phoneNumber"
+                  id="phoneNumber"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
                   className="bg-gray-50 border border-gray-300 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 text-black dark:placeholder-gray-400"
                   placeholder="name@company.com"
                   required
                 />
               </div>
-              
+
               <div>
                 <label
                   htmlFor="password"
