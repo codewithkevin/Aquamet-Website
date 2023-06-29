@@ -24,7 +24,7 @@ const DemoPopup = ({ open, handleClose }) => {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
-  const { error, loading, sendDemo } = DemoRequest();
+  const { loading, sendDemo } = DemoRequest();
 
   const handleSendDemo = () => {
     sendDemo(firstName, lastName, email, phoneNumber);

@@ -37,8 +37,9 @@ export const DemoRequest = () => {
         });
       }
     } catch (error) {
-      setError(error.response.data);
-      toast.error(error.response.data);
+      setError(error.response.data.error);
+      toast.error(error.response.data.error);
+      console.log(error);
     } finally {
       setLoading(false);
     }
