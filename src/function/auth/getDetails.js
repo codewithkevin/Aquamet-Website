@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 export const GetUserDetails = () => {
   const [token, setToken] = useState("");
@@ -19,15 +20,14 @@ export const GetUserDetails = () => {
 
   const fetchUserData = async (token) => {
     try {
-      const response = await fetch("/api/user/account/me", {
-        method: "GET",
+      const response = await axios.get("/api/user/account/me", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
 
-      if (response.ok) {
-        const userData = await response.json();
+      if (response.status === 200) {
+        const userData = response.data;
         const { name } = userData; // Extract the name property from the userData object
         setUserData(name);
         console.log("Response is Okay");

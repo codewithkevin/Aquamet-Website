@@ -1,5 +1,6 @@
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { useState } from "react";
+import axios from "axios";
 
 export const useSignUp = () => {
   const [error, setError] = useState("");
@@ -11,15 +12,15 @@ export const useSignUp = () => {
     setError("");
 
     try {
-      const response = await fetch("/api/user/account/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password, name }),
+      const response = await axios.post("/api/user/account/signup", {
+        email,
+        password,
+        name,
       });
 
-      const responseData = await response.json();
+      const responseData = response.data;
 
-      if (!response.ok) {
+      if (response.status !== 200) {
         setError(responseData.message);
       } else {
         // save the user to local storage

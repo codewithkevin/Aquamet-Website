@@ -1,6 +1,7 @@
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 export const useLogin = () => {
   const [error, setError] = useState("");
@@ -12,23 +13,22 @@ export const useLogin = () => {
     setError("");
 
     try {
-      const response = await fetch("/api/user/account/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
+      const response = await axios.post("/api/user/account/login", {
+        email,
+        password,
       });
 
-      const json = await response.json();
+      const responseData = response.data;
 
-      if (!response.ok) {
-        setError(json.message);
-        toast.error(json.message);
+      if (response.status !== 200) {
+        setError(responseData.message);
+        toast.error(responseData.message);
       } else {
         // save the user to local storage
-        localStorage.setItem("user", JSON.stringify(json));
+        localStorage.setItem("user", JSON.stringify(responseData));
 
         // update the auth context
-        dispatch({ type: "LOGIN", payload: json });
+        dispatch({ type: "LOGIN", payload: responseData });
 
         // update loading state
         setIsLoading(false);
@@ -45,7 +45,7 @@ export const useLogin = () => {
         });
       }
     } catch (error) {
-      setError("Failed to connect to server.");
+      setError("Failed to connect to the server.");
     } finally {
       setIsLoading(false);
     }
