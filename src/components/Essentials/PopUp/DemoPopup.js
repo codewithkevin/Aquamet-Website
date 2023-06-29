@@ -30,6 +30,14 @@ const DemoPopup = ({ open, handleClose }) => {
     sendDemo(firstName, lastName, email, phoneNumber);
   };
 
+  const handleCancel = () => {
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPhoneNumber("");
+    handleClose();
+  };
+
   return (
     <div>
       <Dialog
@@ -115,7 +123,7 @@ const DemoPopup = ({ open, handleClose }) => {
                 <Button
                   variant="outlined"
                   className="w-[240px] sm:w-[150px]"
-                  onClick={handleClose}
+                  onClick={handleCancel}
                 >
                   Cancel
                 </Button>
