@@ -1,12 +1,13 @@
-import * as React from "react";
-import logo from '../../../assests/logo2.png';
+import React, { useState } from "react";
+import logo from "../../../assests/logo2.png";
 import CloseIcon from "@mui/icons-material/Close";
 import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 import Button from "@mui/material/Button";
-import PhonePicker from '../PhonePicker';
+import PhonePicker from "../PhonePicker";
+import { DemoRequest } from "../../../function/requests/demoRequest";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -18,6 +19,17 @@ const Transition = React.forwardRef(function Transition(
 });
 
 const DemoPopup = ({ open, handleClose }) => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+
+  const { error, loading, sendDemo } = DemoRequest();
+
+  const handleSendDemo = () => {
+    sendDemo(firstName, lastName, email, phoneNumber);
+  };
+
   return (
     <div>
       <Dialog
@@ -60,6 +72,8 @@ const DemoPopup = ({ open, handleClose }) => {
                 id="outlined-basic"
                 label="First Name"
                 variant="outlined"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
             <div className="flex flex-col">
@@ -70,6 +84,8 @@ const DemoPopup = ({ open, handleClose }) => {
                 id="outlined-basic"
                 label="Last Name"
                 variant="outlined"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
               />
             </div>
           </div>
@@ -82,23 +98,33 @@ const DemoPopup = ({ open, handleClose }) => {
               id="outlined-basic"
               label="example@gmail.com"
               variant="outlined"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
           <div>
-            <PhonePicker />
+            <PhonePicker onChange={(value) => setPhoneNumber(value)} />
           </div>
 
           <div className="mx-5">
             <div className="flex flex-row justify-center space-x-5 mt-5 mx-5">
               <div>
-                <Button variant="outlined" className="w-[240px] sm:w-[150px]">
+                <Button
+                  variant="outlined"
+                  className="w-[240px] sm:w-[150px]"
+                  onClick={handleClose}
+                >
                   Cancel
                 </Button>
               </div>
               <div>
-                <Button variant="contained" className="w-[240px] sm:w-[150px]">
-                  Send
+                <Button
+                  variant="contained"
+                  className="w-[240px] sm:w-[150px]"
+                  onClick={handleSendDemo}
+                >
+                  {loading ? "Sending..." : "Send"}
                 </Button>
               </div>
             </div>

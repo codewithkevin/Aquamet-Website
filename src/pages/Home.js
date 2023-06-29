@@ -10,6 +10,7 @@ import Mockup from "../components/Home/Mockup";
 import Testiomonial from "../components/Home/Testiomonial";
 import Solutions from "../components/Home/Solutions";
 import Newsletter from "../components/Home/Newsletter";
+import { ToastContainer } from "react-toastify";
 
 const Home = () => {
   return (
@@ -25,6 +26,18 @@ const Home = () => {
       <Testiomonial />
       <Solutions />
       <Newsletter />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 };
