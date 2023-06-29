@@ -27,7 +27,7 @@ const DemoPopup = ({ open, handleClose }) => {
   const { loading, sendDemo } = DemoRequest();
 
   const handleSendDemo = () => {
-    sendDemo(firstName, lastName, email, phoneNumber);
+    sendDemo(firstName, lastName, email);
   };
 
   return (
@@ -81,7 +81,8 @@ const DemoPopup = ({ open, handleClose }) => {
                 Last name
               </h6>
               <TextField
-                id="outlined-basic"
+                type="text"
+                id="name"
                 label="Last Name"
                 variant="outlined"
                 value={lastName}
@@ -95,7 +96,8 @@ const DemoPopup = ({ open, handleClose }) => {
               Email
             </h6>
             <TextField
-              id="outlined-basic"
+              type="email"
+              id="email"
               label="example@gmail.com"
               variant="outlined"
               value={email}

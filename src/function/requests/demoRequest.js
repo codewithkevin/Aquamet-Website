@@ -6,7 +6,7 @@ export const DemoRequest = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const sendDemo = async (firstName, lastName, email, phoneNumber) => {
+  const sendDemo = async (firstName, lastName, email) => {
     setLoading(true);
     try {
       const response = await axios.post(
@@ -15,17 +15,18 @@ export const DemoRequest = () => {
           firstName,
           lastName,
           email,
-          phoneNumber,
+          //   phoneNumber,
         }
       );
 
       const responseData = response.data;
 
       if (response.status !== 200) {
-        toast.error(responseData.response.data);
+        toast.error(responseData.message);
+        console.log("Reasponse data:" + responseData);
       } else {
         setLoading(false);
-        toast.success("Welcome Back", {
+        toast.success("Request Sent", {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -37,9 +38,9 @@ export const DemoRequest = () => {
         });
       }
     } catch (error) {
-      setError(error.response.data.error);
-      toast.error(error.response.data.error);
-      console.log(error);
+      setError(error.response.data);
+      toast.error(error.response.data);
+      console.log("Error Data: " + error);
     } finally {
       setLoading(false);
     }

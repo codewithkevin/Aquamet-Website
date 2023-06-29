@@ -48,7 +48,8 @@ export const useLogin = () => {
         });
       }
     } catch (error) {
-      setError("Failed to connect to the server.");
+      setError(error.response.data);
+      toast.error(error.response.data);
     } finally {
       setIsLoading(false);
     }
