@@ -4,15 +4,24 @@ import { useAuthContext } from "./hooks/useAuthContext";
 
 import NavMenu from "./pages/NavMenu";
 import Footer from "./components/Home/Footer";
-const Home = lazy(() => import("./pages/Home"));
-const Aboutus = lazy(() => import("./pages/AboutUs"));
-const Products = lazy(() => import("./pages/Products"));
-const Solution = lazy(() => import("./pages/Solution"));
-const News = lazy(() => import("./pages/News"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Terms = lazy(() => import("./pages/Terms"));
-const Login = lazy(() => import("./pages/Login"));
-const SignUp = lazy(() => import("./pages/SignUp"));
+import Home from "./pages/Home";
+import Aboutus from "./pages/AboutUs";
+import Products from "./pages/Products";
+import Solution from "./pages/Solution";
+import News from "./pages/News";
+import Contact from "./pages/Contact";
+import Terms from "./pages/Terms";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+
+// const Aboutus = lazy(() => import("./pages/AboutUs"));
+// const Products = lazy(() => import("./pages/Products"));
+// const Solution = lazy(() => import("./pages/Solution"));
+// const News = lazy(() => import("./pages/News"));
+// const Contact = lazy(() => import("./pages/Contact"));
+// const Terms = lazy(() => import("./pages/Terms"));
+// const Login = lazy(() => import("./pages/Login"));
+// const SignUp = lazy(() => import("./pages/SignUp"));
 
 const App = () => {
   const { user } = useAuthContext();
