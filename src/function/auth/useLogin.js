@@ -45,7 +45,7 @@ export const useLogin = () => {
         });
       }
     } catch (error) {
-      setError("An error occurred during login.");
+      setError("Failed to connect to server.");
     } finally {
       setIsLoading(false);
     }
