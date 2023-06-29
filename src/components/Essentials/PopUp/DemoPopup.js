@@ -35,7 +35,6 @@ const DemoPopup = ({ open, handleClose }) => {
     setLastName("");
     setEmail("");
     setPhoneNumber("");
-    handleClose();
   };
 
   return (

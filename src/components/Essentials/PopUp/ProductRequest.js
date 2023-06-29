@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import logo from "../../../assests/logo2.png";
 import CloseIcon from "@mui/icons-material/Close";
 import TextField from "@mui/material/TextField";
@@ -7,6 +7,7 @@ import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 import Button from "@mui/material/Button";
 import PhonePicker from "../PhonePicker";
+import { SmartProbeRequest } from "../../../function/requests/smartProbeRequest";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -18,6 +19,34 @@ const Transition = React.forwardRef(function Transition(
 });
 
 const ProductRequest = ({ open, handleClose }) => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [numberOfProbes, setNumberOfProbes] = useState("");
+  const [location, setLocation] = useState("");
+
+  const { loading, sendSmartProbeRequest } = SmartProbeRequest();
+
+  const handleSumbit = () => {
+    const data = {
+      fullName,
+      email,
+      phoneNumber,
+      numberOfProbes,
+      location,
+    };
+
+    sendSmartProbeRequest(data);
+  };
+
+  const handleCancel = () => {
+    setFullName("");
+    setEmail("");
+    setPhoneNumber("");
+    setNumberOfProbes("");
+    setLocation("");
+  };
+
   return (
     <div>
       <Dialog
@@ -54,9 +83,12 @@ const ProductRequest = ({ open, handleClose }) => {
                 Full Name*
               </h6>
               <TextField
-                id="outlined-basic"
+                type="text"
+                id="fullName"
                 label="Enter your full name"
                 variant="outlined"
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
               />
             </div>
           </div>
@@ -66,14 +98,17 @@ const ProductRequest = ({ open, handleClose }) => {
               Email Address*
             </h6>
             <TextField
-              id="outlined-basic"
+              type="email"
+              id="email"
               label="example@gmail.com"
               variant="outlined"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
           <div>
-            <PhonePicker />
+            <PhonePicker onChange={(value) => setPhoneNumber(value)} />
           </div>
 
           <div className="flex md:flex-row sm:flex-col md:space-y-0 sm:space-y-10 md:justify-between gap-0 md:gap-[5rem] lg:gap-[5rem]">
@@ -82,9 +117,12 @@ const ProductRequest = ({ open, handleClose }) => {
                 Number of Probes*
               </h6>
               <TextField
-                id="outlined-basic"
+                type="number"
+                id="numberOfProbes"
                 label="Enter number of probes"
                 variant="outlined"
+                value={numberOfProbes}
+                onChange={(e) => setNumberOfProbes(e.target.value)}
               />
             </div>
             <div className="flex flex-col">
@@ -92,9 +130,12 @@ const ProductRequest = ({ open, handleClose }) => {
                 Location*
               </h6>
               <TextField
-                id="outlined-basic"
+                type="text"
+                id="location"
                 label="Eg: East Legon, Accra"
                 variant="outlined"
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
               />
             </div>
           </div>
@@ -102,13 +143,21 @@ const ProductRequest = ({ open, handleClose }) => {
           <div>
             <div className="flex flex-row justify-center space-x-5 mt-5 mx-5">
               <div>
-                <Button variant="outlined" className="w-[240px] sm:w-[150px]">
+                <Button
+                  onClick={handleCancel}
+                  variant="outlined"
+                  className="w-[240px] sm:w-[150px]"
+                >
                   Cancel
                 </Button>
               </div>
               <div>
-                <Button variant="contained" className="w-[240px] sm:w-[150px]">
-                  Send
+                <Button
+                  onClick={handleSumbit}
+                  variant="contained"
+                  className="w-[240px] sm:w-[150px]"
+                >
+                  {loading ? "Sending....." : "Send"}
                 </Button>
               </div>
             </div>
