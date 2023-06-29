@@ -1,8 +1,15 @@
 import PhoneInput from "react-phone-number-input";
 import { useState } from "react";
 
-const PhonePicker = () => {
+const PhonePicker = ({ onChange }) => {
   const [value, setValue] = useState();
+
+  const handleChange = (newValue) => {
+    setValue(newValue);
+    if (onChange) {
+      onChange(newValue);
+    }
+  };
 
   return (
     <div className="flex flex-col">
@@ -13,7 +20,7 @@ const PhonePicker = () => {
         <PhoneInput
           placeholder="Enter phone number"
           value={value}
-          onChange={setValue}
+          onChange={handleChange}
           className="flex-1 outline-none"
         />
       </div>

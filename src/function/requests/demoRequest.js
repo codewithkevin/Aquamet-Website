@@ -6,7 +6,7 @@ export const DemoRequest = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const sendDemo = async (firstName, lastName, email) => {
+  const sendDemo = async (firstName, lastName, email, phoneNumber) => {
     setLoading(true);
     try {
       const response = await axios.post(
@@ -15,7 +15,7 @@ export const DemoRequest = () => {
           firstName,
           lastName,
           email,
-          //   phoneNumber,
+          phoneNumber,
         }
       );
 

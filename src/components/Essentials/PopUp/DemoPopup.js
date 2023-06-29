@@ -27,7 +27,7 @@ const DemoPopup = ({ open, handleClose }) => {
   const { loading, sendDemo } = DemoRequest();
 
   const handleSendDemo = () => {
-    sendDemo(firstName, lastName, email);
+    sendDemo(firstName, lastName, email, phoneNumber);
   };
 
   return (
