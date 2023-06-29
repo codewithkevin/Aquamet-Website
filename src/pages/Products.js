@@ -8,25 +8,30 @@ import { ToastContainer } from "react-toastify";
 
 const Products = () => {
   return (
-    <div className="w-full h-full  space-y-10">
-      <Intro />
-      <Solutions />
-      <Mockup />
-      <Start />
-      <Newsletter />
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
-    </div>
+    <section className="w-full h-full">
+      <div className="space-y-10">
+        <Intro />
+        <Solutions />
+        <Mockup />
+        <Start />
+        <Newsletter />
+      </div>
+
+      <div>
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
+      </div>
+    </section>
   );
 };
 
