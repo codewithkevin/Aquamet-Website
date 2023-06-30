@@ -12,6 +12,8 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import { StartFarm } from "../../../function/requests/startFarm";
+import FormGroup from "@mui/material/FormGroup";
+import Checkbox from "@mui/material/Checkbox";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -31,8 +33,22 @@ const NewFarmers = ({ open, handleClose }) => {
   const [idnumber, setIdNumber] = useState("");
   const [location, setLocation] = useState("");
   const [farmlocationInfo, setFarmLocationInfo] = useState("");
-  const [farmFacilities, setFarmFacilities] = useState("");
+  const [farmFacilities, setFarmFacilities] = useState([]);
   // const [meetingVenue, setMeetingVenue] = useState("");
+
+  const handleFarmFacilitiesChange = (event) => {
+    const selectedFacility = event.target.value;
+    if (event.target.checked) {
+      setFarmFacilities((prevFacilities) => [
+        ...prevFacilities,
+        selectedFacility,
+      ]);
+    } else {
+      setFarmFacilities((prevFacilities) =>
+        prevFacilities.filter((facility) => facility !== selectedFacility)
+      );
+    }
+  };
 
   const { loading, sendStartFarm } = StartFarm();
 
@@ -139,7 +155,7 @@ const NewFarmers = ({ open, handleClose }) => {
             </h6>
             <FormControl>
               <RadioGroup
-                defaultValue={idtype}
+                value={idtype}
                 aria-labelledby="demo-radio-buttons-group-label"
                 name="radio-buttons-group"
               >
@@ -175,12 +191,12 @@ const NewFarmers = ({ open, handleClose }) => {
 
           <div className="flex flex-col my-5 space-y-1">
             <h6 className="font-serif text-[14px] leading-[20px]  ml-1 font-bold">
-              Current Location*<span className="text-red-500">*</span>
+              Current Location<span className="text-red-500">*</span>
             </h6>
             <FormControl>
               <RadioGroup
                 aria-labelledby="demo-radio-buttons-group-label"
-                defaultValue={location}
+                value={location}
                 name="radio-buttons-group"
               >
                 <FormControlLabel
@@ -196,15 +212,12 @@ const NewFarmers = ({ open, handleClose }) => {
                   control={<Radio />}
                   label="Europe"
                 />
-                <div className="flex flex-row ">
-                  <FormControlLabel
-                    value="Others"
-                    onChange={(e) => setLocation(e.target.value)}
-                    control={<Radio />}
-                    label="Others"
-                  />
-                  <TextField id="standard-basic" variant="standard" />
-                </div>
+                <FormControlLabel
+                  value="Others"
+                  onChange={() => setLocation("Others")}
+                  control={<Radio />}
+                  label="Others"
+                />
               </RadioGroup>
             </FormControl>
           </div>
@@ -229,36 +242,36 @@ const NewFarmers = ({ open, handleClose }) => {
               Which of the following facilities do you intend to use for your
               fish farm.
             </h6>
-            <FormControl>
-              <RadioGroup
-                aria-labelledby="demo-radio-buttons-group-label"
-                defaultValue={farmFacilities}
-                name="radio-buttons-group"
-              >
-                <FormControlLabel
-                  value="Ghana"
-                  onChange={() => setFarmFacilities("Ghana")}
-                  control={<Radio />}
-                  label="Ghana"
-                />
-                <FormControlLabel value="USA" control={<Radio />} label="USA" />
-                <FormControlLabel
-                  value="Europe"
-                  onChange={() => setFarmFacilities("Europe")}
-                  control={<Radio />}
-                  label="Europe"
-                />
-                <div className="flex flex-row ">
-                  <FormControlLabel
-                    value="Others"
-                    onChange={(e) => setFarmFacilities(e.target.value)}
-                    control={<Radio />}
-                    label="Others"
-                  />
-                  <TextField id="standard-basic" variant="standard" />
-                </div>
-              </RadioGroup>
-            </FormControl>
+            <FormGroup>
+              <FormControlLabel
+                control={<Checkbox />}
+                label="Ghana"
+                value="Ghana"
+                checked={farmFacilities.includes("Ghana")}
+                onChange={handleFarmFacilitiesChange}
+              />
+              <FormControlLabel
+                control={<Checkbox />}
+                label="USA"
+                value="USA"
+                checked={farmFacilities.includes("USA")}
+                onChange={handleFarmFacilitiesChange}
+              />
+              <FormControlLabel
+                control={<Checkbox />}
+                label="Europe"
+                value="Europe"
+                checked={farmFacilities.includes("Europe")}
+                onChange={handleFarmFacilitiesChange}
+              />
+              <FormControlLabel
+                control={<Checkbox />}
+                label="Others"
+                value="Others"
+                checked={farmFacilities.includes("Others")}
+                onChange={handleFarmFacilitiesChange}
+              />
+            </FormGroup>
           </div>
 
           <div className="mx-5">
