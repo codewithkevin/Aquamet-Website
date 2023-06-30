@@ -33,7 +33,6 @@ export const GetUserDetails = () => {
         const userData = response.data;
         const { name } = userData; // Extract the name property from the userData object
         setUserData(name);
-        console.log("Response is Okay");
       } else {
         console.error(
           "An error occurred while fetching user data.",

@@ -1,6 +1,7 @@
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export const useSignUp = () => {
   const [error, setError] = useState("");
@@ -24,6 +25,8 @@ export const useSignUp = () => {
 
       const responseData = response.data;
 
+      console.log("Data", responseData);
+
       if (response.status !== 200) {
         setError(responseData.message);
       } else {
@@ -35,9 +38,23 @@ export const useSignUp = () => {
 
         // update loading state
         setIsLoading(false);
+
+        toast.success("Welcome", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+
+        console.log("Data", responseData);
       }
     } catch (error) {
-      setError("An error occurred during sign-up.");
+      setError(error.response.data);
+      toast.error(error.response.data);
     } finally {
       setIsLoading(false);
     }
