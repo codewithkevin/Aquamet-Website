@@ -37,7 +37,7 @@ const NewFarmers = ({ open, handleClose }) => {
   const [idtype, setIdType] = useState("");
   const [idnumber, setIdNumber] = useState("");
   const [location, setLocation] = useState("");
-  const [farmlocationInfo, setFarmLocationInfo] = useState("");
+  const [farmlocationInfo, setFarmLocationInfo] = useState();
   const [farmFacilities, setFarmFacilities] = useState([]);
   const [meetingVenue, setMeetingVenue] = useState("");
 
