@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import logo from "../../../assests/logo2.png";
 import CloseIcon from "@mui/icons-material/Close";
 import TextField from "@mui/material/TextField";
@@ -11,6 +11,7 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
+import { StartFarm } from "../../../function/requests/startFarm";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -22,6 +23,33 @@ const Transition = React.forwardRef(function Transition(
 });
 
 const NewFarmers = ({ open, handleClose }) => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [age, setAge] = useState("");
+  const [idtype, setIdType] = useState("");
+  const [idnumber, setIdNumber] = useState("");
+  const [location, setLocation] = useState("");
+  const [farmlocationInfo, setFarmLocationInfo] = useState("");
+  const [farmFacilities, setFarmFacilities] = useState("");
+  // const [meetingVenue, setMeetingVenue] = useState("");
+
+  const { loading, sendStartFarm } = StartFarm();
+
+  const handleSubmit = () => {
+    sendStartFarm(
+      fullName,
+      email,
+      phoneNumber,
+      age,
+      idtype,
+      idnumber,
+      location,
+      farmlocationInfo,
+      farmFacilities
+    );
+  };
+
   return (
     <div>
       <Dialog
@@ -61,7 +89,10 @@ const NewFarmers = ({ open, handleClose }) => {
                 Full name
               </h6>
               <TextField
-                id="outlined-basic"
+                type="text"
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
+                id="name"
                 label="Enter your name"
                 variant="outlined"
               />
@@ -73,14 +104,17 @@ const NewFarmers = ({ open, handleClose }) => {
               Email
             </h6>
             <TextField
-              id="outlined-basic"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              id="email"
               label="example@gmail.com"
               variant="outlined"
             />
           </div>
 
           <div>
-            <PhonePicker />
+            <PhonePicker onChange={(value) => setPhoneNumber(value)} />
           </div>
 
           <div className="flex md:flex-row sm:flex-col md:space-y-0 sm:space-y-10 md:justify-between gap-0 md:gap-[5rem] lg:gap-[5rem]">
@@ -89,7 +123,10 @@ const NewFarmers = ({ open, handleClose }) => {
                 Age
               </h6>
               <TextField
-                id="outlined-basic"
+                type="number"
+                value={age}
+                onChange={(e) => setAge(e.target.value)}
+                id="age"
                 label="Eg: 25"
                 variant="outlined"
               />
@@ -102,19 +139,21 @@ const NewFarmers = ({ open, handleClose }) => {
             </h6>
             <FormControl>
               <RadioGroup
+                defaultValue={idtype}
                 aria-labelledby="demo-radio-buttons-group-label"
-                defaultValue="female"
                 name="radio-buttons-group"
               >
                 <FormControlLabel
                   value="Ghana card"
                   control={<Radio />}
                   label="Ghana card"
+                  onChange={() => setIdType("Ghana card")}
                 />
                 <FormControlLabel
                   value="Passport"
                   control={<Radio />}
                   label="Passport"
+                  onChange={() => setIdType("Passport")}
                 />
               </RadioGroup>
             </FormControl>
@@ -125,7 +164,10 @@ const NewFarmers = ({ open, handleClose }) => {
               ID Number<span className="text-red-500">*</span>
             </h6>
             <TextField
-              id="outlined-basic"
+              type="text"
+              value={idnumber}
+              onChange={(e) => setIdNumber(e.target.value)}
+              id="idnumber"
               label="Enter ID Number"
               variant="outlined"
             />
@@ -138,23 +180,26 @@ const NewFarmers = ({ open, handleClose }) => {
             <FormControl>
               <RadioGroup
                 aria-labelledby="demo-radio-buttons-group-label"
-                defaultValue="female"
+                defaultValue={location}
                 name="radio-buttons-group"
               >
                 <FormControlLabel
                   value="Ghana"
+                  onChange={() => setLocation("Ghana")}
                   control={<Radio />}
                   label="Ghana"
                 />
                 <FormControlLabel value="USA" control={<Radio />} label="USA" />
                 <FormControlLabel
                   value="Europe"
+                  onChange={() => setLocation("Europe")}
                   control={<Radio />}
                   label="Europe"
                 />
                 <div className="flex flex-row ">
                   <FormControlLabel
                     value="Others"
+                    onChange={(e) => setLocation(e.target.value)}
                     control={<Radio />}
                     label="Others"
                   />
@@ -170,7 +215,10 @@ const NewFarmers = ({ open, handleClose }) => {
               address of the intended site(if any)*
             </h6>
             <TextField
-              id="outlined-basic"
+              type="text"
+              value={farmlocationInfo}
+              onChange={(e) => setFarmLocationInfo(e.target.value)}
+              id="current Location"
               label="Enter your answer"
               variant="outlined"
             />
@@ -184,23 +232,26 @@ const NewFarmers = ({ open, handleClose }) => {
             <FormControl>
               <RadioGroup
                 aria-labelledby="demo-radio-buttons-group-label"
-                defaultValue="female"
+                defaultValue={farmFacilities}
                 name="radio-buttons-group"
               >
                 <FormControlLabel
                   value="Ghana"
+                  onChange={() => setFarmFacilities("Ghana")}
                   control={<Radio />}
                   label="Ghana"
                 />
                 <FormControlLabel value="USA" control={<Radio />} label="USA" />
                 <FormControlLabel
                   value="Europe"
+                  onChange={() => setFarmFacilities("Europe")}
                   control={<Radio />}
                   label="Europe"
                 />
                 <div className="flex flex-row ">
                   <FormControlLabel
                     value="Others"
+                    onChange={(e) => setFarmFacilities(e.target.value)}
                     control={<Radio />}
                     label="Others"
                   />
@@ -218,8 +269,12 @@ const NewFarmers = ({ open, handleClose }) => {
                 </Button>
               </div>
               <div>
-                <Button variant="contained" className="w-[240px] sm:w-[150px]">
-                  Send
+                <Button
+                  onClick={handleSubmit}
+                  variant="contained"
+                  className="w-[240px] sm:w-[150px]"
+                >
+                  {loading ? "Sending....." : "Send"}
                 </Button>
               </div>
             </div>
