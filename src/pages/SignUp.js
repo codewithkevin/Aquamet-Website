@@ -87,8 +87,7 @@ const SignUp = () => {
                   value={phoneNumber}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                   className="bg-gray-50 border border-gray-300 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 text-black dark:placeholder-gray-400"
-                  placeholder="name@company.com"
-                  required
+                  placeholder="Eg: +233 547363834"
                 />
               </div>
 

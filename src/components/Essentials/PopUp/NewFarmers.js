@@ -14,6 +14,11 @@ import FormControl from "@mui/material/FormControl";
 import { StartFarm } from "../../../function/requests/startFarm";
 import FormGroup from "@mui/material/FormGroup";
 import Checkbox from "@mui/material/Checkbox";
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { TimePicker } from "@mui/x-date-pickers/TimePicker";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -34,7 +39,7 @@ const NewFarmers = ({ open, handleClose }) => {
   const [location, setLocation] = useState("");
   const [farmlocationInfo, setFarmLocationInfo] = useState("");
   const [farmFacilities, setFarmFacilities] = useState([]);
-  // const [meetingVenue, setMeetingVenue] = useState("");
+  const [meetingVenue, setMeetingVenue] = useState("");
 
   const handleFarmFacilitiesChange = (event) => {
     const selectedFacility = event.target.value;
@@ -245,33 +250,85 @@ const NewFarmers = ({ open, handleClose }) => {
             <FormGroup>
               <FormControlLabel
                 control={<Checkbox />}
-                label="Ghana"
-                value="Ghana"
-                checked={farmFacilities.includes("Ghana")}
+                label="Plastic tanks"
+                value="Plastic tanks"
+                checked={farmFacilities.includes("Plastic tanks")}
                 onChange={handleFarmFacilitiesChange}
               />
               <FormControlLabel
                 control={<Checkbox />}
-                label="USA"
-                value="USA"
-                checked={farmFacilities.includes("USA")}
+                label="Tarpaulin tanks"
+                value="Tarpaulin tanks"
+                checked={farmFacilities.includes("Tarpaulin tanks")}
                 onChange={handleFarmFacilitiesChange}
               />
               <FormControlLabel
                 control={<Checkbox />}
-                label="Europe"
-                value="Europe"
-                checked={farmFacilities.includes("Europe")}
+                label="Earthen ponds"
+                value="Earthen ponds"
+                checked={farmFacilities.includes("Earthen ponds")}
                 onChange={handleFarmFacilitiesChange}
               />
               <FormControlLabel
                 control={<Checkbox />}
-                label="Others"
-                value="Others"
-                checked={farmFacilities.includes("Others")}
+                label="Cages"
+                value="Cages"
+                checked={farmFacilities.includes("Cages")}
                 onChange={handleFarmFacilitiesChange}
               />
             </FormGroup>
+          </div>
+
+          <div className="flex flex-row space-x-10">
+            <div className="flex flex-col">
+              <h1>
+                Specify meeting date to finalize your decision
+                <br /> <span className="text-gray-500">Date</span>
+              </h1>
+              <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DemoContainer components={["DatePicker"]}>
+                  <DatePicker label="Basic date picker" />
+                </DemoContainer>
+              </LocalizationProvider>
+            </div>
+            <div className="flex flex-col">
+              <h1>
+                Specify meeting
+                <br /> <span>time</span>
+                <br /> <span className="text-gray-500">Time</span>
+              </h1>
+              <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DemoContainer components={["TimePicker"]}>
+                  <TimePicker label="Basic time picker" />
+                </DemoContainer>
+              </LocalizationProvider>
+            </div>
+          </div>
+
+          <div className="flex flex-col my-5 space-y-1">
+            <h6 className="font-serif text-[14px] leading-[20px]  ml-1 font-bold">
+              Specify meeting venue<span className="text-red-500">*</span>
+            </h6>
+            <FormControl>
+              <RadioGroup
+                aria-labelledby="demo-radio-buttons-group-label"
+                value={meetingVenue}
+                name="radio-buttons-group"
+              >
+                <FormControlLabel
+                  value="Via Zoom or Google Meet"
+                  onChange={() => setMeetingVenue("Via Zoom or Google Meet")}
+                  control={<Radio />}
+                  label="Online"
+                />
+                <FormControlLabel
+                  value="In-Person"
+                  onChange={() => setMeetingVenue("In-Person")}
+                  control={<Radio />}
+                  label="In-Person"
+                />
+              </RadioGroup>
+            </FormControl>
           </div>
 
           <div className="mx-5">
