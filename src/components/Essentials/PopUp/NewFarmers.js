@@ -40,6 +40,8 @@ const NewFarmers = ({ open, handleClose }) => {
   const [farmlocationInfo, setFarmLocationInfo] = useState();
   const [farmFacilities, setFarmFacilities] = useState([]);
   const [meetingVenue, setMeetingVenue] = useState("");
+  const [meetingDate, setMeetingDate] = useState();
+  const [meetingTime, setMeetingTime] = useState();
 
   const handleFarmFacilitiesChange = (event) => {
     const selectedFacility = event.target.value;
@@ -67,8 +69,14 @@ const NewFarmers = ({ open, handleClose }) => {
       idnumber,
       location,
       farmlocationInfo,
-      farmFacilities
+      farmFacilities,
+      meetingVenue,
+      meetingDate,
+      meetingTime
     );
+
+    console.log(meetingDate);
+    console.log(meetingTime);
   };
 
   return (
@@ -287,7 +295,12 @@ const NewFarmers = ({ open, handleClose }) => {
               </h1>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={["DatePicker"]}>
-                  <DatePicker label="Basic date picker" />
+                  <DatePicker
+                    type="Date"
+                    value={meetingDate}
+                    onChange={(date) => setMeetingDate(date)}
+                    label="Basic date picker"
+                  />
                 </DemoContainer>
               </LocalizationProvider>
             </div>
@@ -299,7 +312,13 @@ const NewFarmers = ({ open, handleClose }) => {
               </h1>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={["TimePicker"]}>
-                  <TimePicker label="Basic time picker" />
+                  <TimePicker
+                    type="Time"
+                    value={meetingTime}
+                    onChange={(time) => setMeetingTime(time)}
+                    label="Basic time picker"
+                    id="time"
+                  />
                 </DemoContainer>
               </LocalizationProvider>
             </div>

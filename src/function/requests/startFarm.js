@@ -15,7 +15,10 @@ export const StartFarm = () => {
     idnumber,
     location,
     farmlocationInfo,
-    farmFacilities
+    farmFacilities,
+    meetingVenue,
+    meetingDate,
+    meetingTime
   ) => {
     setLoading(true);
     try {
@@ -31,6 +34,9 @@ export const StartFarm = () => {
           location,
           farmlocationInfo,
           farmFacilities,
+          meetingVenue,
+          meetingDate,
+          meetingTime,
         }
       );
 
