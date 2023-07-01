@@ -18,9 +18,15 @@ const NavMenu = () => {
 
   const { userData } = GetUserDetails();
 
+  const handleNavItemClick = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between flex-wrap lg:px-[130px] px-6 py-2 bg-white shadow">
-      <Link to="/">
+      <Link onClick={handleNavItemClick} to="/">
         <div className="flex flex-row items-center flex-shrink-0 text-white mr-6 lg:mr-72">
           <img src={logo} className="top-2 w-20  h-18" alt="Logo" />
         </div>
@@ -54,33 +60,36 @@ const NavMenu = () => {
         <div className="text-sm lg:flex-grow">
           <Link
             to="/about"
-            href="#"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
+            onClick={handleNavItemClick}
           >
             About Us
           </Link>
           <Link
             to="/products"
-            href="#"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
+            onClick={handleNavItemClick}
           >
             Products
           </Link>
           <Link
             to="/solution"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
+            onClick={handleNavItemClick}
           >
             Our Solution
           </Link>
           <Link
             to="/news"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
+            onClick={handleNavItemClick}
           >
             News
           </Link>
           <Link
             to="/contact"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-7 text-[16px] text-[#475467]  font-medium"
+            onClick={handleNavItemClick}
           >
             Contact Us
           </Link>
@@ -123,7 +132,9 @@ const NavMenu = () => {
                 </div>
               ) : (
                 <div>
-                  <Link to="/login">Login</Link>
+                  <Link onClick={handleNavItemClick} to="/login">
+                    Login
+                  </Link>
                 </div>
               )}
             </h1>
