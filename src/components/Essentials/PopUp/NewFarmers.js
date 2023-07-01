@@ -118,7 +118,7 @@ const NewFarmers = ({ open, handleClose }) => {
                 type="text"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
-                id="name"
+                id="farm-name-input"
                 label="Enter your name"
                 variant="outlined"
               />
@@ -133,7 +133,7 @@ const NewFarmers = ({ open, handleClose }) => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              id="email"
+              id="farm-email-input"
               label="example@gmail.com"
               variant="outlined"
             />
@@ -152,7 +152,7 @@ const NewFarmers = ({ open, handleClose }) => {
                 type="number"
                 value={age}
                 onChange={(e) => setAge(e.target.value)}
-                id="age"
+                id="farm-age-input"
                 label="Eg: 25"
                 variant="outlined"
               />
@@ -193,7 +193,7 @@ const NewFarmers = ({ open, handleClose }) => {
               type="text"
               value={idnumber}
               onChange={(e) => setIdNumber(e.target.value)}
-              id="idnumber"
+              id="farm-idnumber-input"
               label="Enter ID Number"
               variant="outlined"
             />
@@ -241,7 +241,7 @@ const NewFarmers = ({ open, handleClose }) => {
               type="text"
               value={farmlocationInfo}
               onChange={(e) => setFarmLocationInfo(e.target.value)}
-              id="current Location"
+              id="farm-current-Location-input"
               label="Enter your answer"
               variant="outlined"
             />
@@ -314,7 +314,7 @@ const NewFarmers = ({ open, handleClose }) => {
                     value={meetingTime}
                     onChange={(time) => setMeetingTime(time)}
                     label="Basic time picker"
-                    id="time"
+                    id="farm-time-input"
                   />
                 </DemoContainer>
               </LocalizationProvider>
@@ -365,8 +365,6 @@ const NewFarmers = ({ open, handleClose }) => {
               </div>
             </div>
           </div>
-
-
         </div>
       </Dialog>
     </div>

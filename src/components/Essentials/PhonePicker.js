@@ -18,6 +18,8 @@ const PhonePicker = ({ onChange }) => {
       </h6>
       <div className="flex items-center border border-gray-300 rounded-md p-2">
         <PhoneInput
+          id="phone-input"
+          name="phone"
           placeholder="Enter phone number"
           value={value}
           onChange={handleChange}

@@ -76,7 +76,7 @@ const DemoPopup = ({ open, handleClose }) => {
                 First name
               </h6>
               <TextField
-                id="outlined-basic"
+                id="demo-firstName-input"
                 label="First Name"
                 variant="outlined"
                 value={firstName}
@@ -89,7 +89,7 @@ const DemoPopup = ({ open, handleClose }) => {
               </h6>
               <TextField
                 type="text"
-                id="name"
+                id="demo-lastName-input"
                 label="Last Name"
                 variant="outlined"
                 value={lastName}
@@ -104,7 +104,7 @@ const DemoPopup = ({ open, handleClose }) => {
             </h6>
             <TextField
               type="email"
-              id="email"
+              id="demo-email-input"
               label="example@gmail.com"
               variant="outlined"
               value={email}

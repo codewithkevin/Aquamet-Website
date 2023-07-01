@@ -30,7 +30,7 @@ const Newsletter = () => {
           <div className="flex flex-col">
             <TextField
               type="text"
-              id="email"
+              id="news-email-input"
               label="Email Address"
               style={{ backgroundColor: "white" }}
               value={email}

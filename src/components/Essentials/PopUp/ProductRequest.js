@@ -84,7 +84,7 @@ const ProductRequest = ({ open, handleClose }) => {
               </h6>
               <TextField
                 type="text"
-                id="fullName"
+                id="product-fullName-input"
                 label="Enter your full name"
                 variant="outlined"
                 value={fullName}
@@ -99,7 +99,7 @@ const ProductRequest = ({ open, handleClose }) => {
             </h6>
             <TextField
               type="email"
-              id="email"
+              id="product-email-input"
               label="example@gmail.com"
               variant="outlined"
               value={email}
@@ -118,7 +118,7 @@ const ProductRequest = ({ open, handleClose }) => {
               </h6>
               <TextField
                 type="number"
-                id="numberOfProbes"
+                id="product-numberOfProbes-input"
                 label="Enter number of probes"
                 variant="outlined"
                 value={numberOfProbes}
@@ -131,7 +131,7 @@ const ProductRequest = ({ open, handleClose }) => {
               </h6>
               <TextField
                 type="text"
-                id="location"
+                id="product-location-input"
                 label="Eg: East Legon, Accra"
                 variant="outlined"
                 value={location}

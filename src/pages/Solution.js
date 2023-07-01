@@ -16,7 +16,7 @@ const Solution = () => {
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="200"
-            class="md:max-w-6xl  mx-auto"
+            className="md:max-w-6xl  mx-auto"
           >
             <h1 className="font-serif font-bold md:text-[36px] sm:text-[28px] md:leading-[44px] sm:leading-[31px] text-center">
               We have the best solution to your needs
@@ -51,7 +51,7 @@ const Solution = () => {
           data-aos-duration="700"
           className="space-y-10 p-10"
         >
-          <div class="md:max-w-5xl  mx-auto mb-[10rem]">
+          <div className="md:max-w-5xl  mx-auto mb-[10rem]">
             <h1 className="ffont-serif font-bold md:text-[36px] sm:text-[28px] md:leading-[44px] sm:leading-[31px] text-center">
               Continuous real-time monitoring of water quality anywhere
             </h1>
@@ -75,7 +75,7 @@ const Solution = () => {
         </div>
 
         <div className="space-y-10 p-10">
-          <div class="md:max-w-5xl mx-auto mb-[10rem]">
+          <div className="md:max-w-5xl mx-auto mb-[10rem]">
             <h1 className="ffont-serif font-bold md:text-[36px] sm:text-[28px] md:leading-[44px] sm:leading-[31px] text-center">
               Alert system via SMS, IVR and mobile app notifications
             </h1>
@@ -116,7 +116,7 @@ const Solution = () => {
         </div>
 
         <div className="space-y-10 p-10">
-          <div class="md:max-w-5xl  mx-auto">
+          <div className="md:max-w-5xl  mx-auto">
             <h1 className="ffont-serif font-bold md:text-[36px] sm:text-[28px] md:leading-[44px] sm:leading-[31px] text-center">
               Interactive farm management tools on AquaMet Mobile App.
             </h1>
