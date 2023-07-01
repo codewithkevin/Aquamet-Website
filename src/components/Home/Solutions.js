@@ -1,7 +1,6 @@
 import { useState } from "react";
 import phone from "../../assests/Others/phone1.png";
 import phone2 from "../../assests/Others/phone2.png";
-import { Link } from "react-router-dom";
 import MessageModal from "../Essentials/MessageModal";
 
 const Solutions = () => {
