@@ -1,9 +1,13 @@
-import React from "react";
+import { useState } from "react";
 import phone from "../../assests/Others/phone1.png";
 import phone2 from "../../assests/Others/phone2.png";
 import { Link } from "react-router-dom";
+import MessageModal from "../Essentials/MessageModal";
 
 const Solutions = () => {
+  const [showModal, setShowModal] = useState(false);
+  const toggleModal = () => setShowModal(!showModal);
+
   return (
     <section className="mt-10 md:mt-20 h-full w-full">
       <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] lg lg:max-40 pb-4 space-y-3 md:space-x-10 lg:space-x-5">
@@ -22,31 +26,25 @@ const Solutions = () => {
           </div>
 
           <div className="flex flex-row items-center">
-            <button>
-              <Link
-                to="https://apps.apple.com/us/app/my-app/id1234567890"
-                target="_blank"
-              >
-                <img
-                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                  alt="Download on the App Store"
-                />
-              </Link>
+            <button onClick={toggleModal}>
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store"
+              />
             </button>
 
-            <button>
-              <Link
-                to="https://play.google.com/store/apps/details?id=com.myapp"
-                target="_blank"
-              >
-                <img
-                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                  alt="Get it on Google Play"
-                  className="h-14"
-                />
-              </Link>
+            <button onClick={toggleModal}>
+              <img
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                alt="Get it on Google Play"
+                className="h-14"
+              />
             </button>
           </div>
+
+          {showModal && (
+            <MessageModal message="Coming Soon..." onClose={toggleModal} />
+          )}
         </div>
 
         <div
