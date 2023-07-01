@@ -2,17 +2,27 @@ import { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-export const NewSubscribe = () => {
+export const Concern = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const sendSubscribe = async (email) => {
+  const sendConcern = async (
+    firstName,
+    lastName,
+    email,
+    phoneNumber,
+    message
+  ) => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://aquamet.onrender.com/api/user/request/news",
+        "https://aquamet.onrender.com/api/user/request/concern",
         {
+          firstName,
+          lastName,
           email,
+          phoneNumber,
+          message,
         }
       );
 
@@ -21,7 +31,7 @@ export const NewSubscribe = () => {
         console.log("Reasponse data:" + response);
       } else {
         setLoading(false);
-        toast.success("Subscribed", {
+        toast.success("Concern sent", {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -41,5 +51,5 @@ export const NewSubscribe = () => {
     }
   };
 
-  return { error, loading, sendSubscribe };
+  return {  loading, sendConcern };
 };

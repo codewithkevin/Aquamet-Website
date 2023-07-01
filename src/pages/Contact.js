@@ -6,8 +6,23 @@ import Checkbox from "@mui/material/Checkbox";
 import { Button } from "@mui/material";
 import Newsletter from "../components/Home/Newsletter";
 import PhonePicker from "../components/Essentials/PhonePicker";
+import { Concern } from "../function/requests/sendConcern";
+import { useState } from "react";
 
 const Contact = () => {
+  const { loading, sendConcern } = Concern();
+
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendConcern(firstName, lastName, email, phoneNumber, message);
+  };
+
   return (
     <div className="w-full h-full space-y-10">
       <section className="flex flex-col justify-center items-center space-y-10 pb-20">
@@ -22,7 +37,9 @@ const Contact = () => {
             </h1>
 
             <div className="mt-5">
-              <p className="text-center">Our friendly team is always here to chat.</p>
+              <p className="text-center">
+                Our friendly team is always here to chat.
+              </p>
             </div>
           </div>
         </div>
@@ -81,7 +98,10 @@ const Contact = () => {
                   First name
                 </h6>
                 <TextField
-                  id="outlined-basic"
+                  type="text"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  id="name"
                   label="First Name"
                   variant="outlined"
                 />
@@ -91,7 +111,10 @@ const Contact = () => {
                   Last name
                 </h6>
                 <TextField
-                  id="outlined-basic"
+                  type="text"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  id="name"
                   label="Last Name"
                   variant="outlined"
                 />
@@ -103,13 +126,16 @@ const Contact = () => {
                 Email
               </h6>
               <TextField
-                id="outlined-basic"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                id="email"
                 label="example@gmail.com"
                 variant="outlined"
               />
             </div>
 
-            <PhonePicker />
+            <PhonePicker onChange={(value) => setPhoneNumber(value)} />
 
             <div className="flex flex-col">
               <h6 className="font-serif text-[14px] leading-[20px] mb-2 ml-1">
@@ -117,7 +143,10 @@ const Contact = () => {
               </h6>
 
               <TextField
-                id="outlined-multiline-static"
+                type="text"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                id="message"
                 label="Leava your meassage......"
                 multiline
                 rows={4}
@@ -132,8 +161,12 @@ const Contact = () => {
               </h6>
             </div>
 
-            <Button variant="contained" sx={{ backgroundColor: "#146A96" }}>
-              Send message
+            <Button
+              onClick={handleSubmit}
+              variant="contained"
+              sx={{ backgroundColor: "#146A96" }}
+            >
+              {loading ? "Sending...." : "Send message"}
             </Button>
           </div>
         </div>
