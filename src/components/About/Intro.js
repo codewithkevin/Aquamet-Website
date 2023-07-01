@@ -6,7 +6,7 @@ const Intro = () => {
     <section className="">
       <div className="flex flex-col justify-center items-center space-y-0">
         <div className="flex flex-col items-center bg-[#B2E2FB] w-full pb-10">
-          <h1 className="text-[#146A96] font-serif font-semibold text-[16px] leading-[24px] text-center mt-20">
+          <h1 className="text-[#146A96] font-serif font-semibold text-[16px] leading-[24px] text-center  mt-28">
             About Us
           </h1>
 
