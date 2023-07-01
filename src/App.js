@@ -4,6 +4,9 @@ import { useAuthContext } from "./hooks/useAuthContext";
 
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
+import ForgotPassword from "./pages/reset/ForgotPassword";
+import ConfirmPage from "./pages/reset/ConfirmPage";
+import VerifiedPage from "./pages/reset/VerifiedPage";
 
 const NavMenu = lazy(() => import("./pages/NavMenu"));
 const Home = lazy(() => import("./pages/Home"));
@@ -44,6 +47,9 @@ const App = () => {
             path="/signup"
             element={!user ? <SignUp /> : <Navigate to="/" />}
           />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/confirm-code" element={<ConfirmPage />} />
+          <Route path="/verify-message" element={<VerifiedPage />} />
         </Routes>
       </Suspense>
       <Footer />

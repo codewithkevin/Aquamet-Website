@@ -99,9 +99,11 @@ const Login = () => {
                     </label>
                   </div>
                 </div>
-                <span className="text-sm text-blue-400 font-medium text-primary-600 hover:underline cursor-pointer dark:text-primary-500">
-                  Forgot password?
-                </span>
+                <Link to="/forgot-password">
+                  <span className="text-sm text-blue-400 font-medium text-primary-600 hover:underline cursor-pointer dark:text-primary-500">
+                    Forgot password?
+                  </span>
+                </Link>
               </div>
               <button
                 type="submit"
