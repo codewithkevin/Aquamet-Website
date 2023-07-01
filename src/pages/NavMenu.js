@@ -14,6 +14,9 @@ const NavMenu = () => {
 
   const handleLogout = () => {
     logout();
+    if (isOpen) {
+      setIsOpen(false);
+    }
   };
 
   const { userData } = GetUserDetails();
