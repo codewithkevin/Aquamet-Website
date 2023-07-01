@@ -13,7 +13,7 @@ const ConfirmPage = () => {
   return (
     <section className="bg-gray-50 md:h-full sm:h-[100vh] md:mt-2 sm:mt-28">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <div className="flex flex-col items-center mb-6 text-2xl font-semibold  space-y-3 dark:text-white">
+        <div className="flex flex-col items-center text-2xl font-semibold  space-y-3 dark:text-white">
           <img
             className="w-50 h-20"
             src="http://localhost:3000/static/media/logo512.9a3ca2850c06c503ecfe.png"
@@ -21,12 +21,13 @@ const ConfirmPage = () => {
           />
 
           <div className="flex flex-col items-center">
-            <h3 className="text-gray-900">Forgot password?</h3>
-            <p className="text-gray-500 text-sm mt-3">
-              No worries! Enter your email to reset your password.
+            <h3 className="text-gray-900">Check your email</h3>
+            <p className="text-gray-500 text-sm mt-3 text-center max-w-xs w-auto">
+              We sent a verification link to example@gmail.com
             </p>
           </div>
         </div>
+        
         <div className="w-full  md:mt-0 sm:max-w-md xl:p-0">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <form className="space-y-4 md:space-y-6">
@@ -67,6 +68,7 @@ const ConfirmPage = () => {
             </form>
           </div>
         </div>
+
       </div>
     </section>
   );

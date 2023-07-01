@@ -49,14 +49,16 @@ const ForgotPassword = () => {
                 />
               </div>
 
-              <Link>
-                <button
-                  type="submit"
-                  className="w-full text-white bg-blue-400 focus:outline-none focus:ring-primary-300 font-bold rounded-lg text-md px-5 py-2.5 text-center "
-                >
-                  Reset Password
-                </button>
-              </Link>
+              <div>
+                <Link to="/confirm-code">
+                  <button
+                    type="submit"
+                    className="w-full text-white bg-blue-400 focus:outline-none focus:ring-primary-300 font-bold rounded-lg text-md px-5 py-2.5 text-center "
+                  >
+                    Reset Password
+                  </button>
+                </Link>
+              </div>
 
               <div className="flex flex-row justify-center pt-10 space-x-5">
                 <Link to="/login">
