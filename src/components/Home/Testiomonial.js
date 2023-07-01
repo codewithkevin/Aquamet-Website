@@ -8,7 +8,7 @@ import Rating from "@mui/material/Rating";
 
 const Testimonial = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [value, setValue] = useState(6);
+  const [value] = useState(6);
 
   const titles = [
     {

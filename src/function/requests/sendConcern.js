@@ -51,5 +51,5 @@ export const Concern = () => {
     }
   };
 
-  return {  loading, sendConcern };
+  return { error, loading, sendConcern };
 };
