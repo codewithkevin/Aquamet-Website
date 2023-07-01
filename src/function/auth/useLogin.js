@@ -26,6 +26,7 @@ export const useLogin = () => {
       if (response.status !== 200) {
         setError(responseData.message);
         toast.error(responseData.message);
+        console.log("Response", response);
       } else {
         // save the user to local storage
         localStorage.setItem("user", JSON.stringify(responseData));
@@ -50,6 +51,7 @@ export const useLogin = () => {
     } catch (error) {
       setError(error.response.data);
       toast.error(error.response.data);
+      console.log("Error", error.response.data);
     } finally {
       setIsLoading(false);
     }
