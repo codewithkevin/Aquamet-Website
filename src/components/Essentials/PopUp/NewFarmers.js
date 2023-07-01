@@ -74,9 +74,6 @@ const NewFarmers = ({ open, handleClose }) => {
       meetingDate,
       meetingTime
     );
-
-    console.log(meetingDate);
-    console.log(meetingTime);
   };
 
   return (
@@ -368,6 +365,8 @@ const NewFarmers = ({ open, handleClose }) => {
               </div>
             </div>
           </div>
+
+
         </div>
       </Dialog>
     </div>
