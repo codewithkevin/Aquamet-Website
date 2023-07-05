@@ -28,8 +28,9 @@ const Home = () => {
       <Newsletter />
       <div>
         <ToastContainer
-          position="top-center"
-          autoClose={5000}
+          className="w-10"
+          position="top-right"
+          autoClose={2000}
           hideProgressBar={false}
           newestOnTop={false}
           closeOnClick
