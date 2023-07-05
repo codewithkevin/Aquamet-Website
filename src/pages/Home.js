@@ -26,21 +26,6 @@ const Home = () => {
       <Testiomonial />
       <Solutions />
       <Newsletter />
-      <div>
-        <ToastContainer
-          className="w-10"
-          position="top-right"
-          autoClose={2000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
-      </div>
     </div>
   );
 };

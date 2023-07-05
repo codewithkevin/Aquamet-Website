@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import ForgotPassword from "./pages/reset/ForgotPassword";
 import ConfirmPage from "./pages/reset/ConfirmPage";
 import VerifiedPage from "./pages/reset/VerifiedPage";
+import CustomToastContainer from "./components/Essentials/CustomToastContainer";
 
 const NavMenu = lazy(() => import("./pages/NavMenu"));
 const Home = lazy(() => import("./pages/Home"));
@@ -78,6 +79,8 @@ const App = () => {
         </Routes>
       </Suspense>
       <Footer />
+
+      <CustomToastContainer />
     </div>
   );
 };
