@@ -10,6 +10,7 @@ import ForgotPassword from "./pages/reset/ForgotPassword";
 import ConfirmPage from "./pages/reset/ConfirmPage";
 import VerifiedPage from "./pages/reset/VerifiedPage";
 import CustomToastContainer from "./components/Essentials/CustomToastContainer";
+import LoadingScreen from "./components/Essentials/LoadingScreen";
 
 const NavMenu = lazy(() => import("./pages/NavMenu"));
 const Home = lazy(() => import("./pages/Home"));
@@ -56,7 +57,7 @@ const App = () => {
   return (
     <div>
       <NavMenu />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingScreen />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<Aboutus />} />
