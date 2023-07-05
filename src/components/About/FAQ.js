@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const faqs = [
   {
@@ -46,7 +47,10 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      data-aos="fade-out-up"
+      className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"
+    >
       <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-6">
         Frequently asked questions
       </h2>
@@ -94,9 +98,12 @@ const FAQSection = () => {
           team.
         </p>
 
-        <Button variant="contained" style={{ backgroundColor: "#146A96" }}>
-          Get in touch
-        </Button>
+        <Link to="/contact">
+          {" "}
+          <Button variant="contained" style={{ backgroundColor: "#146A96" }}>
+            Get in touch
+          </Button>
+        </Link>
       </div>
     </div>
   );

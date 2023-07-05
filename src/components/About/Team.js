@@ -8,7 +8,7 @@ import member3 from "../../assests/About/member3.jpeg";
 const Team = () => {
   return (
     <section>
-      <div>
+      <div data-aos="zoom-in-up">
         <div className="flex flex-col items-center text-center">
           <h2 className="font-bold text-2xl my-4">Meet Our Team</h2>
         </div>
@@ -32,7 +32,7 @@ const Team = () => {
         </div>
       </div>
 
-      <div>
+      <div data-aos="zoom-in-down">
         <div class="flex flex-col items-center text-center">
           <h2 class="font-bold text-2xl my-4">Board Members</h2>
         </div>

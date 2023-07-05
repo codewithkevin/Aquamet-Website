@@ -24,10 +24,10 @@ const MessageModal = ({ message, onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 modal-container"
+      className="fixed inset-0 flex items-center justify-center bg--800 bg-opacity-50 modal-container"
       onClick={handleModalClick}
     >
-      <div className="modal-content bg-white w-96 h-60 flex flex-col items-center justify-center rounded-2xl">
+      <div className="modal-content bg-gray-100 w-96 h-60 flex flex-col items-center justify-center rounded-2xl">
         <img
           width="48"
           height="48"

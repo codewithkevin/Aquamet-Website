@@ -5,7 +5,10 @@ const Intro = () => {
   return (
     <section className="">
       <div className="flex flex-col justify-center items-center space-y-0">
-        <div className="flex flex-col items-center bg-[#B2E2FB] w-full pb-10">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col items-center bg-[#B2E2FB] w-full pb-10"
+        >
           <h1 className="text-[#146A96] font-serif font-semibold text-[16px] leading-[24px] text-center  mt-28">
             About Us
           </h1>
@@ -15,7 +18,10 @@ const Intro = () => {
               Aquamet Technologies
             </h1>
 
-            <div className="mx-0 mt-5 space-y-4 max-w-auto sm:mx-5 sm:flex sm:flex-col sm:items-center md:text-justify md:max-w-2xl lg:max-w-3xl">
+            <div
+              data-aos="fade-left"
+              className="mx-0 mt-5 space-y-4 max-w-auto sm:mx-5 sm:flex sm:flex-col sm:items-center md:text-justify md:max-w-2xl lg:max-w-3xl"
+            >
               <p className="font-serif font-medium leading-[30px] text-justify text-[#475467]">
                 We are driven by the huge potential in the aquaculture industry
                 as a prominent way of reducing Ghana’s 62% fish deficit. We are
@@ -37,7 +43,7 @@ const Intro = () => {
           </div>
         </div>
 
-        <div className="mt-5 mx-5 mb-7  md:mb-14">
+        <div data-aos="fade-right" className="mt-5 mx-5 mb-7  md:mb-14">
           <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2 lg:space-x-7">
             <div className="mt-5 md:mt-20">
               <div className="sm:text-center md:text-left">
@@ -95,7 +101,7 @@ const Intro = () => {
           </div>
         </div>
 
-        <div className="mt-5 lg:mt-10 mx-5 mb-7  md:mb-14">
+        <div data-aos="zoom-out" className="mt-5 lg:mt-10 mx-5 mb-7  md:mb-14">
           <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-2 lg:space-x-7">
             <div className="mt-5 md:mt-20 ">
               <div className=" md:text-left sm:text-center">
