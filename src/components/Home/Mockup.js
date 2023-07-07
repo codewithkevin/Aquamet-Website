@@ -9,10 +9,7 @@ const Mockup = () => {
   return (
     <section loading="lazy" className="md:mt-20 pb-10 sm:mt-10">
       <div className="flex md:flex-row sm:flex-col mx-5 lg:mx-[16rem] pb-4  space-y-3 md:space-x-10">
-        <div
-          data-aos="fade-right"
-          className="flex flex-col basis-1/2 sm:mb-20 mb-0"
-        >
+        <div className="flex flex-col basis-1/2 sm:mb-20 mb-0">
           <div className="mt-0 lg::mt-14 md:mt-10">
             <h1 className="text-2xl font-semibold mb-4 font-dmsans">
               AquaStall <span className=""> - Marketplace</span>
@@ -39,10 +36,7 @@ const Mockup = () => {
         {showModal && (
           <MessageModal message="Coming Soon..." onClose={toggleModal} />
         )}
-        <div
-          data-aos="fade-left"
-          className="w-full md:w-1/2 mt-10 rounded-xl overflow-hidden md:pt-5"
-        >
+        <div className="w-full md:w-1/2 mt-10 rounded-xl overflow-hidden md:pt-5">
           <div className="border-4 border-black">
             <img src={mockup} alt="aquamet" className="w-full h-auto block" />
           </div>

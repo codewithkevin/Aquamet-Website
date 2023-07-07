@@ -11,10 +11,7 @@ const Products = () => {
   }
 
   return (
-    <section
-      data-aos="zoom-in"
-      className="flex flex-col items-center justify-center pb-10 bg-[#B2E2FB]"
-    >
+    <section className="flex flex-col items-center justify-center pb-10 bg-[#B2E2FB]">
       <h1 className="mx-auto text-center font-bold text-3xl mt-10 font-serif">
         Our Products and Services
       </h1>

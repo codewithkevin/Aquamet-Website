@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="mt-5 md:mt-20  mx-5 mb-10">
       <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2">
-        <div data-aos="fade-up-left" className="md:mt-10 sm:mt-4">
+        <div className="md:mt-10 sm:mt-4">
           <div className="md:max-w-3xl sm:max-w-[1rem] mb-4">
             <strong className="text-[36px]  font-semibold leading-[38px] text-center font-dmsans">
               Aquamet Technologies
@@ -54,7 +54,7 @@ const About = () => {
         </div>
 
         <div
-          data-aos="fade-up-right"
+          // data-aos="fade-up-right"
           loading="lazy"
           className="mb-10 mt-0 sm:mt-5 lg:mt-0 md:mt-[8rem]"
         >

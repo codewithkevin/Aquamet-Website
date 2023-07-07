@@ -2,12 +2,7 @@ import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 
 const Others = () => {
   return (
-    <section
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="100"
-      className="flex flex-col items-center p-10 bg-[#B2E2FB]"
-    >
+    <section className="flex flex-col items-center p-10 bg-[#B2E2FB]">
       <div>
         <h1 className="mx-auto text-center font-medium text-[36px] leading-[44px] font-dmsans">
           What drives us?

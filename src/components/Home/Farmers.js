@@ -4,12 +4,7 @@ const Farmers = () => {
   return (
     <section className="sm:mt-10 md:mt-16 mx-5 mb-20">
       <div className="lg:flex lg:flex-row lg:justify-evenly grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2">
-        <div
-          data-aos="fade-left"
-          data-aos-easing="linear"
-          data-aos-duration="100"
-          className="mt-5"
-        >
+        <div className="mt-5">
           <strong className="text-[37px] text-center font-dmsans md:font-medium sm:font-semibold leading-[44px]">
             Our Farmers
           </strong>
@@ -31,13 +26,7 @@ const Farmers = () => {
           </div>
         </div>
 
-        <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          loading="lazy"
-          className="mt-14 sm:mt-2 md:mt-[8rem] lg:mt-0"
-        >
+        <div loading="lazy" className="mt-14 sm:mt-2 md:mt-[8rem] lg:mt-0">
           <img className="md:flex lg:flex rounded-3xl" src={ug} alt="" />
         </div>
       </div>
