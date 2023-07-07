@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import CustomToastContainer from "./components/Essentials/CustomToastContainer";
 import LoadingScreen from "./components/Essentials/LoadingScreen";
 import NavMenu from "./pages/NavMenu";
+import Contact from "./pages/Contact";
 
 // Lazy loaded components
 const Home = lazy(() => import("./pages/Home"));
@@ -14,7 +15,6 @@ const AboutUs = lazy(() => import("./pages/AboutUs"));
 const Products = lazy(() => import("./pages/Products"));
 const Solution = lazy(() => import("./pages/Solution"));
 const News = lazy(() => import("./pages/News"));
-const Contact = lazy(() => import("./pages/Contact"));
 const Terms = lazy(() => import("./pages/Terms"));
 const Login = lazy(() => import("./pages/Login"));
 const SignUp = lazy(() => import("./pages/SignUp"));
