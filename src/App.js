@@ -11,7 +11,7 @@ import NavMenu from "./pages/NavMenu";
 // Lazy loaded components
 const Home = lazy(() => import("./pages/Home"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
-const Products = lazy(() => import("./components/Home/Products"));
+const Products = lazy(() => import("./pages/Products"));
 const Solution = lazy(() => import("./pages/Solution"));
 const News = lazy(() => import("./pages/News"));
 const Contact = lazy(() => import("./pages/Contact"));

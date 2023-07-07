@@ -14,7 +14,7 @@ const Intro = () => {
   };
   return (
     <section>
-      <div className="flex flex-col justify-center items-center space-y-10 pb-2">
+      <div className="flex flex-col justify-center items-center space-y-10 pb-2 mt-10">
         <div className="mb-7 lg:mb-14 bg-[#B2E2FB] w-full h-full p-20 flex flex-col items-center justify-center">
           <h1 className="text-[#146A96] font-serif font-bold text-[16px] leading-[24px] text-center">
             Our Products
@@ -24,14 +24,6 @@ const Intro = () => {
             <h1 className="font-serif font-bold text-[48px] leading-[60px] text-center">
               Aquamet Products
             </h1>
-
-            <div className="mx-0 mt-5 space-y-4 max-w-auto sm:mx-5 sm:flex sm:flex-col sm:items-center md:text-justify md:max-w-lg lg:max-w-lg">
-              <p className="font-serif font-normal text-center leading-[30px]">
-                Powerful, self-serve product and growth analytics to help you
-                convert, engage, and retain more customers. Trusted by best
-                companies.
-              </p>
-            </div>
           </div>
         </div>
 

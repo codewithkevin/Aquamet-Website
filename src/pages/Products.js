@@ -4,7 +4,6 @@ import Solutions from "../components/Home/Solutions";
 import Mockup from "../components/Home/Mockup";
 import Newsletter from "../components/Home/Newsletter";
 import Start from "../components/Products/Start";
-import { ToastContainer } from "react-toastify";
 
 const Products = () => {
   return (
