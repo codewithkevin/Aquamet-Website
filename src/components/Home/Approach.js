@@ -103,8 +103,7 @@ const Approach = () => {
               to remotely monitor water quality via SMS, mobile app, and
               advisory. This means farmers can quickly and easily access
               important information about their aquaculture operations without
-              import AOS from '../Essentials/AOSInitializer'; having to
-              physically check on their farms.
+              having to physically check on their farms.
             </p>
           </div>
 
