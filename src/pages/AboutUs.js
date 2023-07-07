@@ -5,7 +5,7 @@ import Newsletter from "../components/Home/Newsletter";
 import FAQSection from "../components/About/FAQ";
 import Products from "../components/Home/Products";
 
-const Aboutus = () => {
+const AboutUs = () => {
   return (
     <div className="w-full h-full  space-y-10">
       <Intro />
@@ -17,4 +17,4 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
+export default AboutUs;
